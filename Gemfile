@@ -1,6 +1,10 @@
 source 'https://rubygems.org'
 source 'https://BnrJb6FZyzspBboNJzYZ@gem.fury.io/govuk/'
 
+#ruby=ruby-1.9.3-p374
+#ruby-gemset=quirkafleeg
+
+
 gem 'rails', '3.2.13'
 gem 'unicorn', '4.3.1'
 
@@ -25,7 +29,7 @@ group :test do
   gem 'shoulda', '2.11.3'
 end
 
-gem 'plek', '1.3.1'
+gem 'plek', '1.4.0'
 gem 'jasmine', '1.1.2'
 
 gem 'govuk_frontend_toolkit', '0.31.0'
