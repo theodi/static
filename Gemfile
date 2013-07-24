@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 source 'https://BnrJb6FZyzspBboNJzYZ@gem.fury.io/govuk/'
 
-#ruby=ruby-1.9.3-p374
-#ruby-gemset=quirkafleeg
+#ruby=ruby-1.9.3
+#ruby-gemset=quirkafleeg-static
 
 
 gem 'rails', '3.2.13'
