@@ -1,1 +1,1 @@
-thin:    bundle exec thin start -p 3004
+thin:    bundle exec thin start -p $PORT
