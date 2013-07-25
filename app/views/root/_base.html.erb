@@ -4,7 +4,7 @@
 	<!--[if lt IE 9]><html class="lte-ie8 <%= html_classes %>" lang="en"><![endif]-->
 	<!--[if gt IE 8]><!--><html lang="en" class="<%= html_classes %>"><!--<![endif]-->
 	<head>
-	  <title><%= content_for?(:title) ? yield(:title) : "Test Frontend" %></title>
+	  <title><!-- WAT --></title>
 
 	  <%= render partial: 'stylesheet', locals: { css_file: local_assigns[:css_file] || 'application' } %>
 
@@ -43,23 +43,9 @@
 		</nav>
 
 		<div class="whiteout">
-	
-			<section>
-				<header>
-					<div class="container">
-						<h1><%= yield(:title) %></h1>
-					</div>
-				</header>
-
-		    <%= banner_notification %>
-
-				<div class='container main-default' id='wrapper'>
-
-		      <%= yield :content %>
-
-				</div>
-			</section>
-
+			<div id='wrapper'>
+					<!-- Wrapper from client app will be inserted here -->
+			</div>	
 		</div>
 
 		<footer id='footer' style='clear: both'>
