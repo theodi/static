@@ -11,7 +11,7 @@ gem 'thin'
 gem 'dotenv-rails'
 
 gem 'aws-ses', :require => 'aws/ses' # Needed by exception_notification
-gem 'exception_notification'
+gem 'exception_notification', '~> 2.6.1'
 gem 'lograge', '~> 0.1.0'
 
 group :router do
