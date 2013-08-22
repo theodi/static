@@ -9,12 +9,6 @@
 
     <%= render partial: 'stylesheet', locals: { css_file: 'header-footer-only' } %>
 
-    <%= render partial: "fonts" %>
-
-    <!--[if lt IE 9]>
-      <%= javascript_include_tag 'ie.js' %>
-    <![endif]-->
-
     <%= render partial: "icons" %>
   </head>
   <body<%= content_for?(:body_classes) ? " class=\"#{yield(:body_classes)}\"".html_safe : '' %>>
