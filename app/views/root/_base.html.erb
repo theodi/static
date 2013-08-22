@@ -6,12 +6,6 @@
 
 	  <%= render partial: 'stylesheet', locals: { css_file: local_assigns[:css_file] || 'application' } %>
 
-	  <%= render partial: "fonts" %>
-
-	  <!--[if lt IE 9]>
-	    <%= javascript_include_tag 'ie.js' %>
-	  <![endif]-->
-
 	  <%= render partial: "icons" %>
 
 	  <%= render partial: 'javascript', locals: { js_file: local_assigns[:js_file] || 'application' } unless local_assigns[:js_at_the_end] %>
