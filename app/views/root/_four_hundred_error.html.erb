@@ -1,4 +1,4 @@
-<% content_for :title do %><%= local_assigns[:title] %> - GOV.UK<% end %>
+<% content_for :title do %><%= local_assigns[:title] %><% end %>
 
 <% content_for :html_classes do %>error error-40X<% end %>
 
@@ -16,8 +16,6 @@
 	  	<article role="article" class="group">
 	     <div class="inner">
          <%= raw local_assigns[:intro] %>
-
-         <%= render partial: 'report_a_problem_form' %>
        </div>
      </article>
    </div>

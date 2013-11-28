@@ -4,9 +4,9 @@ class TemplatesTest < ActionDispatch::IntegrationTest
 
   context "fetching templates" do
     should "be 200 for templates that exist" do
-      %w(wrapper header_footer_only chromeless 404 406 500).each do |template|
+      %w(wrapper 404 406 500).each do |template|        
         get "/templates/#{template}.html.erb"
-        assert_equal 200, last_response.status
+        assert_equal 200, last_response.status, template
       end
     end
 
@@ -33,7 +33,7 @@ class TemplatesTest < ActionDispatch::IntegrationTest
 
   context "fetching raw templates" do
     should "be 200 for templates that exist" do
-      %w(related report_a_problem).each do |template|
+      %w(related).each do |template|
         get "/templates/#{template}.raw.html.erb"
         assert_equal 200, last_response.status
       end
