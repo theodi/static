@@ -15,6 +15,7 @@ gem 'exception_notification', '~> 2.6.1'
 gem 'lograge', '~> 0.1.0'
 
 gem 'jquery-rails'
+gem 'font-awesome-rails'
 
 group :router do
   gem 'router-client', '2.0.3', :require => 'router/client'
