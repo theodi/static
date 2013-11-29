@@ -66,22 +66,7 @@
 
     </header> <!-- /site-header -->
 
-    <% if content_for?(:title) %>
-      <header class="page-title">
-          <div class="container">
-              <h1><%= yield :title %></h1>
-          </div>
-      </header>
-    <% end %>
-    
-    <%= yield :hero %>
-
-    <div class="container">
-        <div class="row">
-          <div id='wrapper'>
-          </div>
-        </div>
-    </div>
+    <div id='wrapper'></div>
 
     <footer class="site-footer">
         <div class="container">
