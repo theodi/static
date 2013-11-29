@@ -4,14 +4,14 @@ class TemplatesTest < ActionDispatch::IntegrationTest
 
   context "fetching templates" do
     should "be 200 for templates that exist" do
-      %w(wrapper 404 406 500).each do |template|        
+      %w(www minimal embedded).each do |template|        
         get "/templates/#{template}.html.erb"
         assert_equal 200, last_response.status, template
       end
     end
 
     should "return the rendered templates" do
-      visit "/templates/wrapper.html.erb"
+      visit "/templates/www.html.erb"
       refute_match /<%/, page.source # Should be no ERB tags
       assert page.has_selector?("#wrapper")
     end
@@ -49,7 +49,7 @@ class TemplatesTest < ActionDispatch::IntegrationTest
       get "/templates/foo.raw.html.erb"
       assert_equal 404, last_response.status
 
-      get "/templates/wrapper.raw.html.erb"
+      get "/templates/www.raw.html.erb"
       assert_equal 404, last_response.status
     end
 
