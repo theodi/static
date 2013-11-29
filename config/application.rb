@@ -61,8 +61,6 @@ module Static
     # No need to boot app when precompiling assets
     config.assets.initialize_on_precompile = false
 
-    config.assets.prefix = "static"
-
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 

@@ -13,11 +13,11 @@ class IconRedirectsTest < ActionDispatch::IntegrationTest
       get "/#{file}"
       assert_equal 301, last_response.status
       # In development and test mode the asset pipeline doesn't add the hashes to the URLs
-      assert_equal "http://example.org/static/#{file}", last_response.location
+      assert_equal "http://example.org/assets/#{file}", last_response.location
     end
 
     should "redirect #{file} to a location that exists" do
-      get "/static/#{file}"
+      get "/assets/#{file}"
       assert_equal 200, last_response.status
       assert last_response.body.size > 100
     end
@@ -25,7 +25,7 @@ class IconRedirectsTest < ActionDispatch::IntegrationTest
     should "ignore query string when redirecting #{file}" do
       get "/#{file}?foo=bar"
       assert_equal 301, last_response.status
-      assert_equal "http://example.org/static/#{file}", last_response.location
+      assert_equal "http://example.org/assets/#{file}", last_response.location
     end
   end
 
@@ -37,7 +37,7 @@ class IconRedirectsTest < ActionDispatch::IntegrationTest
       get "/#{file}"
       assert_equal 301, last_response.status
       # In development and test mode the asset pipeline doesn't add the hashes to the URLs
-      assert_equal "http://example.org/static/apple-touch-icon-57x57.png", last_response.location
+      assert_equal "http://example.org/assets/apple-touch-icon-57x57.png", last_response.location
     end
   end
 end
