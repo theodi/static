@@ -43,14 +43,17 @@ module Static
     config.filter_parameters += [:password]
 
     config.assets.precompile += %w{
-      favicon.ico
-      *.js
-      application*.css
-      print.css
-      fonts*.css
-      guides-print.css
-      header-footer-only*.css
-      barclays-epdq-styles.css
+      layout.js 
+      badge.css 
+      ie9.css 
+      ie8.css 
+      ie7.css 
+      ie6.css 
+      respond.min.js 
+      html5shiv.js
+      bootstrap/bootstrap-collapse.js 
+      modernizr.custom.js
+      masonry.js
     }
 
     config.assets.css_compressor = :yui
