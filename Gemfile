@@ -34,6 +34,10 @@ group :test do
   gem 'shoulda', '2.11.3'
 end
 
+group :production do
+  gem 'airbrake'
+end
+
 gem 'plek', '1.4.0'
 gem 'jasmine', '1.1.2'
 
