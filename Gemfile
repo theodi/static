@@ -5,7 +5,7 @@ source 'https://BnrJb6FZyzspBboNJzYZ@gem.fury.io/govuk/'
 #ruby-gemset=quirkafleeg-static
 
 
-gem 'rails', '3.2.13'
+gem 'rails', '~> 3.2.13'
 gem 'foreman'
 gem 'thin'
 gem 'dotenv-rails'
