@@ -37,6 +37,7 @@
           <div class="container">
             <div class="pull-right">
               <ul class="nav navbar-nav main-nav">
+                <% menus = get_menu("www")%>
                 <% menus.each_index do |i| %>
                     <% menu = menus[i] %>
                     <li class="dropdown<%= ' last' if i == menus.length - 1 %>">
