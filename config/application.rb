@@ -54,6 +54,7 @@ module Static
       bootstrap/bootstrap-collapse.js 
       modernizr.custom.js
       masonry.js
+      dapaas.css
     }
 
     config.assets.css_compressor = :yui

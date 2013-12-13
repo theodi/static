@@ -4,6 +4,7 @@
 <head>
   
     <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= stylesheet_link_tag    "dapaas", :media => "all" %>
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= favicon_link_tag 'favicon.ico' %>
@@ -30,7 +31,7 @@
 
 <body>
     <header class="site-header">
-      <%= render :partial => 'root/navbar', :locals => { :mobile => false } %>
+      <%= render :partial => 'root/dapaas_navbar', :locals => { :mobile => false } %>
       
       <div class="collapse navbar-collapse">        
         <div class="navbar navbar-static-top">
@@ -75,11 +76,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 footer-content">
-                    <h1 class="footer-logo"><a href="http://www.theodi.org">Open Data Institute</a></h1>
-                    <p><a href="http://www.theodi.org/contact">Open Data Institute, 65 Clifton Street, London EC2A 4JE</a></p>
-                    <p><a href="mailto:info@theodi.org">info@theodi.org</a> Company <a href="http://opencorporates.com/companies/gb/08030289">08030289</a> 
-                        <span>VAT</span><span>143 7796 80</span>
-                    </p>
+                    <h1 class="dapaas-footer-logo"><a href="/"><%= image_tag('dapaas-logo.svg', alt: "Data as a Platform and Service", id: "odi-logo") %></a></h1>
                     <p class="license">
                         <a href="http://creativecommons.org/licenses/by-sa/2.0/uk/deed.en_GB" rel="license">
                             <%= image_tag('cc.png', alt: "Creative Commons Licence", width: 80, height: 15) %>
