@@ -1,42 +1,39 @@
  -
   title: "About"
-  link: "/about"
+  link: "/dapaas-about"
   items:
   -
-   title: "About DaPaaS"
-   link: "/about-dapaas"
-  -
    title: "Work packages"
-   link: "/work-packages"
+   link: "/dapaas-work-packages"
   -
    title: "Deliverables"
-   link: "/deliverables"
+   link: "/dapaas-deliverables"
   -
    title: "Reports"
-   link: "/reports"
+   link: "/dapaas-reports"
  -
    title: "Consortium"
-   link: "/consortium"
+   link: "/dapaas-consortium"
    items:
    -
     title: "Partners"
-    link: "/partners"
+    link: "/dapaas-partners"
    -
     title: "Links"
-    link: "/links"
+    link: "/dapaas-links"
    -
     title: "Related Projects"
-    link: "/related-projects" 
+    link: "/dapaas-related-projects" 
    -
     title: "Events"
-    link: "/events"
+    link: "/dapaas-events"
  -
   title: "News"
-  link: "/news"
+  link: "/dapaas-news"
   items:
-   - 
-    title: "Media assets"
-    link: "/media"
    -
     title: "Blog"
-    link: "/blog"
+    link: "/dapaas-blog"
+   - 
+    title: "Media assets"
+    link: "/dapaas-media-assets"
