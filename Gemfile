@@ -38,7 +38,7 @@ group :production do
   gem 'airbrake'
 end
 
-gem 'plek', '1.4.0'
+gem 'plek', github: 'theodi/plek'
 gem 'jasmine', '1.1.2'
 
 gem 'govuk_frontend_toolkit', '0.31.0'
