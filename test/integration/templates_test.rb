@@ -16,6 +16,12 @@ class TemplatesTest < ActionDispatch::IntegrationTest
       assert page.has_selector?("#wrapper")
     end
 
+    should "use scheme-relative URLs for assets" do
+      visit "/templates/www.html.erb"
+      assert_match /\/\/static.dev\/assets/, page.source
+      refute_match /https?:\/\/static.dev\/assets/, page.source
+    end
+
     should "404 for non-existent templates" do
       get "/templates/fooey.html.erb"
       assert_equal 404, last_response.status
