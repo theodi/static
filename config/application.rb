@@ -55,6 +55,7 @@ module Static
       modernizr.custom.js
       masonry.js
       dapaas.css
+      labs.css
     }
 
     config.assets.css_compressor = :yui

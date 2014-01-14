@@ -4,6 +4,7 @@
 <head>
   
     <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= stylesheet_link_tag    "labs", :media => "all" %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= favicon_link_tag 'favicon.ico' %>
 
@@ -29,14 +30,14 @@
 
 <body>
     <header class="site-header">
-      <%= render :partial => 'root/navbar', :locals => { :mobile => false } %>
+      <%= render :partial => 'root/labs_navbar', :locals => { :mobile => false, :title => title, :status => status } %>
       
       <div class="collapse navbar-collapse">        
         <div class="navbar navbar-static-top">
           <div class="container">
             <div class="pull-right">
               <ul class="nav navbar-nav main-nav">
-                <% menus = get_menu("www")%>
+                <% menus = get_menu(menu)%>
                 <% menus.each_index do |i| %>
                     <% menu = menus[i] %>
                     <li class="dropdown<%= ' last' if i == menus.length - 1 %>">
@@ -60,7 +61,7 @@
           </div>
         </div>
         
-        <%= render :partial => 'root/navbar', :locals => { :mobile => true } %>
+        <%= render :partial => 'root/labs_navbar', :locals => { :mobile => true, :title => title, :status => status } %>
         
       </div>
 
