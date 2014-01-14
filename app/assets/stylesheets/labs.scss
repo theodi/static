@@ -1,0 +1,18 @@
+h1.site-title {
+  a {
+    color: #fff;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .label {
+    position: absolute;
+    font-size: 12px;
+    top: -12px;
+    right: -60px;
+    padding: 5px;
+  }
+  font-size: 32px;
+  margin: 10px 0;
+  position: relative;
+}
