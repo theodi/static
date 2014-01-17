@@ -1,4 +1,9 @@
+@import "colours";
+
 h1.site-title {
+  font-size: 32px;
+  margin: 10px 0;
+  position: relative;
   a {
     color: #fff;
     &:hover {
@@ -12,7 +17,55 @@ h1.site-title {
     right: -60px;
     padding: 5px;
   }
-  font-size: 32px;
-  margin: 10px 0;
-  position: relative;
+}
+
+.odi-blue {
+  .page-title, .site-title .status {
+    background-color: $odiBlue;
+  }
+}
+.odi-blue-dark {
+  .page-title, .site-title .status {
+    background-color: $odiBlueDark;
+  }
+}
+.odi-blue-light {
+  .page-title, .site-title .status {
+    background-color: $odiBlueLight;
+  }
+}
+.odi-orange {
+  .page-title, .site-title .status {
+    background-color: $odiOrange;
+  }
+}
+.odi-red {
+  .page-title, .site-title .status {
+    background-color: $odiRed;
+  }
+}
+.odi-orange {
+  .page-title, .site-title .status {
+    background-color: $odiOrange;
+  }
+}
+.odi-green {
+  .page-title, .site-title .status {
+    background-color: $odiColour5;
+  }
+}
+.odi-turquoise {
+  .page-title, .site-title .status {
+    background-color: $odiColour6;
+  }
+}
+.odi-magenta {
+  .page-title, .site-title .status {
+    background-color: $odiColour11;
+  }
+}
+.odi-purple {
+  .page-title, .site-title .status {
+    background-color: $odiColour12;
+  }
 }

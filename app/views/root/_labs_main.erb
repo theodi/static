@@ -28,7 +28,7 @@
     <!--[if lt IE 7]><%= stylesheet_link_tag "ie6.css" %><![endif]-->
 </head>
 
-<body>
+<body class="odi-<%= colour %>">
     <header class="site-header">
       <%= render :partial => 'root/labs_navbar', :locals => { :mobile => false, :title => title, :status => status } %>
       
