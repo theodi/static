@@ -4,6 +4,7 @@
 <head>
   
     <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= stylesheet_link_tag    "labs", :media => "all" %>
     <%= stylesheet_link_tag    "dapaas", :media => "all" %>
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +30,7 @@
     <!--[if lt IE 7]><%= stylesheet_link_tag "ie6.css" %><![endif]-->
 </head>
 
-<body>
+<body class="odi-green">
     <header class="site-header">
       <%= render :partial => 'root/dapaas_navbar', :locals => { :mobile => false } %>
       
