@@ -31,9 +31,6 @@
   title: "News"
   link: "/dapaas-news"
   items:
-   -
-    title: "Blog"
-    link: "/dapaas-blog"
    - 
     title: "Media assets"
     link: "/dapaas-media-assets"
