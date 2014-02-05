@@ -76,6 +76,10 @@
  - 
   title: "What's happening"
   link: "/events"
+  items:
+   -
+    title: "Previous events"
+    link: "/events/previous"
  - 
   title: "News"
   link: "/news"
