@@ -1,3 +1,6 @@
 -
  title: "About"
  link: "/about"
+-
+ title: "Recent validations"
+ link: "/validation/list"
