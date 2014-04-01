@@ -1,11 +1,145 @@
-.dapaas-footer-logo {
-  margin: 0 0 17px 0;
-  clear: both;
+@font-face {
+  font-family: 'Bariol';
+  src: url(asset_path('Bariol_Regular.otf', 'fonts'));
 }
 
-.fp7 {
-  text-align: center;
-  font-size: 14px !important;
-  line-height: 14px;
-  margin: 0;
+@font-face {
+  font-family: 'Bariol';
+  src: url(asset_path('Bariol_Bold.otf', 'fonts'));
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Bariol';
+  src: url(asset_path('Bariol_Light.otf', 'fonts'));
+  font-weight: 100;
+}
+
+$dapaas-black: #272727;
+$dapaas-green: #00E756;
+
+body {
+  font-family: "Bariol", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#dapaas-navbar {
+  background-color: $dapaas-black;
+
+  #dapaas-logo {
+    height: 45px;
+  }
+
+  #dapaas-nav {
+    li, a {
+      height: 65px;
+    }
+
+    a {
+      padding: 23px 35px;
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    li.social {
+      border: none;
+
+      a {
+        padding: 23px 17px;
+      }
+
+      a.fa-linkedin {
+        margin-right: 27px;
+      }
+    }
+  }
+}
+
+#dapaas-hero {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: image-url('dapaas-hero-cloud.png') right no-repeat;
+  padding-right: 400px;
+
+  h1 {
+    font-size: 90px;
+    color: $dapaas-green;
+    font-weight: 100;
+  }
+}
+
+#dapaas-main-nav {
+  background-color: $dapaas-green;
+  font-size: 23px;
+  font-weight: bold;
+
+  .caret {
+    display: none;
+  }
+}
+
+#wrapper {
+  background-color: #f1f1f1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .page-title {
+    background-color: transparent;
+    margin-bottom: 10px;
+
+    h1 {
+      font-size: 40px;
+      color: $dapaas-black;
+      font-family: "Bariol", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      overflow: visible;
+      white-space: normal;
+    }
+  }
+
+  .module-heading {
+    font-family: "Bariol", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  .article-body {
+    h2 {
+      font-family: "Bariol", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      font-size: 23px;
+    }
+
+    & > p:first-of-type {
+      font-size: 27px;
+      line-height: 1.2em;
+    }
+
+    font-size: 17px;
+  }
+}
+
+#dapaas-footer {
+  background-color: $dapaas-black;
+  margin-top: 0;
+
+  #dapaas-footer-logo {
+    margin: 0 0 17px 0;
+    height: 80px;
+    clear: both;
+  }
+
+  .fp7 {
+    text-align: center;
+    font-size: 14px !important;
+    line-height: 14px;
+    margin: 0;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .site-header {
+    margin: 0;
+  }
+
+  .navbar-static-top {
+    background-color: #f1f1f1;
+  }
 }

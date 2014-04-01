@@ -34,7 +34,11 @@
     <header class="site-header">
       <%= render :partial => 'root/dapaas_navbar', :locals => { :mobile => false } %>
 
-      <div class="collapse navbar-collapse">
+      <div id="dapaas-hero" class="container hidden-sm hidden-xs">
+        <h1>Data for publishers and consumers</h1>
+      </div>
+
+      <div class="collapse navbar-collapse" id="dapaas-main-nav">
         <div class="navbar navbar-static-top">
           <div class="container">
             <div class="pull-right">
@@ -73,11 +77,11 @@
       <%= yield :wrapper %>
     </div>
 
-    <footer class="site-footer">
+    <footer class="site-footer" id="dapaas-footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 footer-content">
-                    <h1 class="dapaas-footer-logo"><a href="/"><%= image_tag('dapaas-logo.svg', alt: "Data as a Platform and Service", id: "odi-logo") %></a></h1>
+                    <h1 class="dapaas-footer-logo"><a href="/"><%= image_tag('dapaas-logo-header.png', alt: "Data as a Platform and Service", id: "dapaas-footer-logo") %></a></h1>
                     <p class="license">
                         <a href="http://creativecommons.org/licenses/by-sa/2.0/uk/deed.en_GB" rel="license">
                             <%= image_tag('cc.png', alt: "Creative Commons Licence", width: 80, height: 15) %>

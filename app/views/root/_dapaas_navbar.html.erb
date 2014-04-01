@@ -1,19 +1,19 @@
-<div class="navbar navbar-inverse navbar-static-top<%= ' mobile-only' if mobile %>">
+<div class="navbar navbar-inverse navbar-static-top<%= ' mobile-only' if mobile %>" id="dapaas-navbar">
   <div class="container">
     <% unless mobile %>
       <div class="navbar-header">
-        
+
        <!-- Mobile nav toggle -->
        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
            <span class="icon-bar"></span>
            <span class="icon-bar"></span>
            <span class="icon-bar"></span>
        </button>
-        
-        <a class="navbar-brand" href="/"><%= image_tag('dapaas-logo.svg', alt: "Data as a Platform and Service", id: "odi-logo") %></a>
-        
+
+        <a class="navbar-brand" href="/"><%= image_tag('dapaas-logo-header.png', alt: "Data as a Platform and Service", id: "dapaas-logo") %></a>
+
       </div>
-      
+
       <!-- <div class="modal fade" id="getLogo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -39,19 +39,12 @@
         </div>
       </div> -->
     <% end %>
-    <!--
-    <form class="navbar-form navbar-left">
-      <div class="form-group">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search ODI"/>
-          <input type="submit" value="Go" class="btn"/>
-        </div>
-      </div>
-    </form>
-    -->
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="/dapaas-contact-us">Contact us</a></li>
-      <!-- <li><a href="#about">Sign in</a></li> -->
+
+    <ul class="nav navbar-nav navbar-right" id="dapaas-nav">
+      <li class="social"><a href="/dapaas-contact-us" class="fa fa-twitter fa-lg"></a></li>
+      <li class="social"><a href="/dapaas-contact-us" class="fa fa-linkedin fa-lg"></a></li>
+      <li><a href="/dapaas-contact-us">Get in touch</a></li>
+
     </ul>
   </div>
 </div>
