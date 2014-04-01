@@ -90,6 +90,8 @@ body {
       font-size: 40px;
       color: $dapaas-black;
       font-family: "Bariol", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      overflow: visible;
+      white-space: normal;
     }
   }
 
@@ -130,4 +132,14 @@ body {
     margin: 0;
   }
 
+}
+
+@media (max-width: 767px) {
+  .site-header {
+    margin: 0;
+  }
+
+  .navbar-static-top {
+    background-color: #f1f1f1;
+  }
 }
