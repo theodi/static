@@ -9,12 +9,15 @@
   font-weight: bold;
 }
 
+$dapaas-black: #272727;
+$dapaas-green: #00E756;
+
 body {
   font-family: "Bariol", "Helvetica Neue", Helvetica, Arial, sans-serif;;
 }
 
 #dapaas-navbar {
-  background-color: #272727;
+  background-color: $dapaas-black;
 
   #dapaas-logo {
     height: 45px;
@@ -44,14 +47,31 @@ body {
     }
   }
 }
-.dapaas-footer-logo {
-  margin: 0 0 17px 0;
-  clear: both;
+
+#dapaas-main-nav {
+  background-color: $dapaas-green;
+  font-size: 23px;
+  font-weight: bold;
+
+  .caret {
+    display: none;
+  }
 }
 
-.fp7 {
-  text-align: center;
-  font-size: 14px !important;
-  line-height: 14px;
-  margin: 0;
+#dapaas-footer {
+  background-color: $dapaas-black;
+
+  #dapaas-footer-logo {
+    margin: 0 0 17px 0;
+    height: 80px;
+    clear: both;
+  }
+
+  .fp7 {
+    text-align: center;
+    font-size: 14px !important;
+    line-height: 14px;
+    margin: 0;
+  }
+
 }

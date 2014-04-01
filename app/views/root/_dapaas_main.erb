@@ -2,7 +2,7 @@
 <html lang="en" class="no-js">
 
 <head>
-  
+
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= stylesheet_link_tag    "labs", :media => "all" %>
     <%= stylesheet_link_tag    "dapaas", :media => "all" %>
@@ -14,15 +14,15 @@
     <!--[if lt IE 9]>
       <%= javascript_include_tag "html5shiv.js" %>
     <![endif]-->
-    
+
     <!-- Respond.js in IE7 and IE8 only -->
     <!--[if (IE 7)|(IE 8)]>
       <%= javascript_include_tag "respond.min.js" %>
     <![endif]-->
-    
+
     <!-- Modernizr to detect CSS transitions etc., for Masonry animations -->
     <%= javascript_include_tag "modernizr.custom.js" %>
-    
+
     <!-- IE-only stylesheets -->
     <!--[if lte IE 9]><%= stylesheet_link_tag "ie9.css" %><![endif]-->
     <!--[if lte IE 8]><%= stylesheet_link_tag "ie8.css" %><![endif]-->
@@ -33,8 +33,8 @@
 <body class="odi-green">
     <header class="site-header">
       <%= render :partial => 'root/dapaas_navbar', :locals => { :mobile => false } %>
-      
-      <div class="collapse navbar-collapse">        
+
+      <div class="collapse navbar-collapse" id="dapaas-main-nav">
         <div class="navbar navbar-static-top">
           <div class="container">
             <div class="pull-right">
@@ -62,9 +62,9 @@
             </div>
           </div>
         </div>
-        
+
         <%= render :partial => 'root/navbar', :locals => { :mobile => true } %>
-        
+
       </div>
 
     </header> <!-- /site-header -->
@@ -73,11 +73,11 @@
       <%= yield :wrapper %>
     </div>
 
-    <footer class="site-footer">
+    <footer class="site-footer" id="dapaas-footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 footer-content">
-                    <h1 class="dapaas-footer-logo"><a href="/"><%= image_tag('dapaas-logo.svg', alt: "Data as a Platform and Service", id: "odi-logo") %></a></h1>
+                    <h1 class="dapaas-footer-logo"><a href="/"><%= image_tag('dapaas-logo-header.png', alt: "Data as a Platform and Service", id: "dapaas-footer-logo") %></a></h1>
                     <p class="license">
                         <a href="http://creativecommons.org/licenses/by-sa/2.0/uk/deed.en_GB" rel="license">
                             <%= image_tag('cc.png', alt: "Creative Commons Licence", width: 80, height: 15) %>
@@ -97,9 +97,9 @@
             <p class="fp7">DaPaaS is funded co-funded by the European Commission under the <a href="http://cordis.europa.eu/fp7/home_en.html">Seventh Framework Programme (FP7 2007-2013)</a></p>
         </div>
     </footer>
-    
+
     <%= javascript_include_tag "application" %>
-    
+
     <!-- No collapsible nav in IE6 -->
     <!--[if gt IE 7]><!-->
     <%= javascript_include_tag "bootstrap/bootstrap-collapse.js" %>

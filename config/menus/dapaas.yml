@@ -1,5 +1,5 @@
  -
-  title: "About"
+  title: "What's DaPaaS?"
   link: "/dapaas-about"
   items:
   -
@@ -12,25 +12,25 @@
    title: "Reports"
    link: "/dapaas-reports"
  -
-   title: "Consortium"
-   link: "/dapaas-consortium"
+   title: "Partners"
+   link: "/dapaas-partners"
    items:
    -
-    title: "Partners"
-    link: "/dapaas-partners"
+    title: "Consortium"
+    link: "/dapaas-consortium"
    -
     title: "Links"
     link: "/dapaas-links"
    -
     title: "Related Projects"
-    link: "/dapaas-related-projects" 
-   -
-    title: "Events"
-    link: "/dapaas-events"
+    link: "/dapaas-related-projects"
  -
   title: "News"
   link: "/dapaas-news"
   items:
-   - 
+   -
     title: "Dissemination"
     link: "/dapaas-media-assets"
+ -
+  title: "Events"
+  link: "/dapaas-events"
