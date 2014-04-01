@@ -1,3 +1,49 @@
+@font-face {
+  font-family: 'Bariol';
+  src: url(asset_path('Bariol_Regular.otf', 'fonts'));
+}
+
+@font-face {
+  font-family: 'Bariol';
+  src: url(asset_path('Bariol_Bold.otf', 'fonts'));
+  font-weight: bold;
+}
+
+body {
+  font-family: "Bariol", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+}
+
+#dapaas-navbar {
+  background-color: #272727;
+
+  #dapaas-logo {
+    height: 45px;
+  }
+
+  #dapaas-nav {
+    li, a {
+      height: 65px;
+    }
+
+    a {
+      padding: 23px 35px;
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    li.social {
+      border: none;
+
+      a {
+        padding: 23px 17px;
+      }
+
+      a.fa-linkedin {
+        margin-right: 27px;
+      }
+    }
+  }
+}
 .dapaas-footer-logo {
   margin: 0 0 17px 0;
   clear: both;
