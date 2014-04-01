@@ -42,20 +42,27 @@ module Static
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
 
+    # Add fonts to asset paths
+    config.assets.paths << "#{Rails.root}/app/assets/fonts"
+
     config.assets.precompile += %w{
-      layout.js 
-      badge.css 
-      ie9.css 
-      ie8.css 
-      ie7.css 
-      ie6.css 
-      respond.min.js 
+      layout.js
+      badge.css
+      ie9.css
+      ie8.css
+      ie7.css
+      ie6.css
+      respond.min.js
       html5shiv.js
-      bootstrap/bootstrap-collapse.js 
+      bootstrap/bootstrap-collapse.js
       modernizr.custom.js
       masonry.js
       dapaas.css
       labs.css
+      Bariol_Regular.otf
+      Bariol_Bold.otf
+      Bariol_Light.otf
+      Bariol_Thin.otf
     }
 
     config.assets.css_compressor = :yui
