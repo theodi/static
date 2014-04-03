@@ -63,6 +63,7 @@ module Static
       Bariol_Bold.otf
       Bariol_Light.otf
       Bariol_Thin.otf
+      background-check.js 
     }
 
     config.assets.css_compressor = :yui
