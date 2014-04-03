@@ -159,10 +159,10 @@ hr {
   padding-left: 0;
   padding-right: 0;
   border-top: none;
-  
+
   // Bootstrap seems to give this menu a maximum height
   // Remove this, otherwise lower menu items can get cut off
-  
+
   max-height: none;
 }
 
@@ -650,6 +650,20 @@ hr {
             max-width: none;
             max-height: none;
         }
+
+        .text {
+          position: absolute;
+          top: 25px;
+          left: 25px;
+        }
+
+        .background--light {
+          color: #111;
+        }
+
+        .background--dark {
+          color: #eee;
+        }
       }
 
     .attribution {
@@ -667,7 +681,7 @@ hr {
             -moz-transform: rotate(90deg);
             -moz-transform-origin: 100% 80% 0;
     }
-    
+
     //
     //
     // ***** Overlay hovers *****
@@ -788,7 +802,7 @@ hr {
     @include transition(background-color 0.3s ease);
 }
 
-.module { 
+.module {
 	&.module-highlight-1 { background-color: $odiGrey; }
 	&.module-highlight-2 { background-color: $odiGreyDark; }
 	&.module-highlight-3 { background-color: $odiGreyLight; }
@@ -1171,16 +1185,16 @@ hr {
         }
 
     }
-    
+
     h2, h3 {
       clear: none;
     }
-    
+
     .pull-right {
       margin-left: 10px;
       margin-bottom: 15px;
     }
-    
+
     .pull-left {
       margin-right: 10px;
       margin-bottom: 15px;
@@ -1589,4 +1603,3 @@ img.node-logo {
   width: 250px;
   margin-left: 20px;
 }
-
