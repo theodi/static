@@ -645,16 +645,24 @@ hr {
       }
 
     &.module-image-fullbleed {
+
+        &:hover {
+          .image {
+            opacity: 0.6;
+          }
+        }
+
         padding: 0;
         img {
-            max-width: none;
-            max-height: none;
+          max-width: none;
+          max-height: none;
         }
 
         .text {
           position: absolute;
-          top: 25px;
-          left: 25px;
+          top: 0;
+          padding: 25px;
+          height: 100%;
         }
 
         .background--light {
@@ -662,7 +670,7 @@ hr {
         }
 
         .background--dark {
-          color: #eee;
+          color: #fff;
         }
       }
 
