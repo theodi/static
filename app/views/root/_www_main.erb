@@ -2,7 +2,7 @@
 <html lang="en" class="no-js">
 
 <head>
-  
+
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= favicon_link_tag 'favicon.ico' %>
@@ -11,15 +11,15 @@
     <!--[if lt IE 9]>
       <%= javascript_include_tag "html5shiv.js" %>
     <![endif]-->
-    
+
     <!-- Respond.js in IE7 and IE8 only -->
     <!--[if (IE 7)|(IE 8)]>
       <%= javascript_include_tag "respond.min.js" %>
     <![endif]-->
-    
+
     <!-- Modernizr to detect CSS transitions etc., for Masonry animations -->
     <%= javascript_include_tag "modernizr.custom.js" %>
-    
+
     <!-- IE-only stylesheets -->
     <!--[if lte IE 9]><%= stylesheet_link_tag "ie9.css" %><![endif]-->
     <!--[if lte IE 8]><%= stylesheet_link_tag "ie8.css" %><![endif]-->
@@ -30,8 +30,8 @@
 <body>
     <header class="site-header">
       <%= render :partial => 'root/navbar', :locals => { :mobile => false } %>
-      
-      <div class="collapse navbar-collapse">        
+
+      <div class="collapse navbar-collapse">
         <div class="navbar navbar-static-top">
           <div class="container">
             <div class="pull-right">
@@ -59,9 +59,9 @@
             </div>
           </div>
         </div>
-        
+
         <%= render :partial => 'root/navbar', :locals => { :mobile => true } %>
-        
+
       </div>
 
     </header> <!-- /site-header -->
@@ -76,7 +76,7 @@
                 <div class="col-md-8 footer-content">
                     <h1 class="footer-logo"><a href="http://www.theodi.org">Open Data Institute</a></h1>
                     <p><a href="http://www.theodi.org/contact">Open Data Institute, 65 Clifton Street, London EC2A 4JE</a></p>
-                    <p><a href="mailto:info@theodi.org">info@theodi.org</a> Company <a href="http://opencorporates.com/companies/gb/08030289">08030289</a> 
+                    <p><a href="mailto:info@theodi.org">info@theodi.org</a> Company <a href="http://opencorporates.com/companies/gb/08030289">08030289</a>
                         <span>VAT</span><span>143 7796 80</span>
                     </p>
                     <p class="license">
@@ -102,7 +102,7 @@
                         <li><a href="http://www.flickr.com/photos/ukodi/" class=" ">
                             <%= image_tag('flickr.png', alt: "Follow us on Flickr", title: "Follow us on Flickr") %></a></li>
                     </ul></nav>
-                <br> 
+                <br>
                 <br>
                 <br>
                 <br>
@@ -119,9 +119,9 @@
             </div>
         </div>
     </footer>
-    
+
     <%= javascript_include_tag "application" %>
-    
+
     <!-- No collapsible nav in IE6 -->
     <!--[if gt IE 7]><!-->
     <%= javascript_include_tag "bootstrap/bootstrap-collapse.js" %>
@@ -131,6 +131,7 @@
     <!-- Don't load these on IE 7 or below -->
     <!--[if gt IE 7]><!-->
     <%= javascript_include_tag "masonry.js" %>
+    <%= javascript_include_tag "background-check.js" %>
     <!--<![endif]-->
 
     <%= yield :extra_javascript %>
