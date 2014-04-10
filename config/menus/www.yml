@@ -90,6 +90,10 @@
   title: "News & blog"
   link: "/news"
   items:
-    -
-      title: "Media assets"
-      link: "/newsroom"
+  
+   -
+    title: "Open data stories"
+    link: "/stories"
+   -
+    title: "Media assets"
+    link: "/newsroom"
