@@ -29,6 +29,20 @@ body {
     height: 45px;
   }
 
+  .navbar-form {
+    .form-control {
+      background-color: #fff;
+    }
+
+    .btn {
+      background-color: $dapaas-green;
+      &:hover {
+        background-color: #ff6700;
+        color: #fff;
+      }
+    }
+  }
+
   #dapaas-nav {
     li, a {
       height: 65px;

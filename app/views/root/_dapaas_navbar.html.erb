@@ -15,11 +15,21 @@
       </div>
     <% end %>
 
-    <ul class="nav navbar-nav navbar-right" id="dapaas-nav">
-      <li class="social"><a href="http://twitter.com/dapaasproject" class="fa fa-twitter fa-lg"></a></li>
-      <!-- <li class="social"><a href="/dapaas-contact-us" class="fa fa-linkedin fa-lg"></a></li> -->
-      <li><a href="/dapaas-contact-us">Get in touch</a></li>
+    <div class="pull-right">
+      <form class="navbar-form navbar-left" action="/search">
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="q"/>
+            <input type="submit" value="Go" class="btn"/>
+          </div>
+        </div>
+      </form>
 
-    </ul>
+      <ul class="nav navbar-nav navbar-right" id="dapaas-nav">
+        <li class="social"><a href="http://twitter.com/dapaasproject" class="fa fa-twitter fa-lg"></a></li>
+        <!-- <li class="social"><a href="/dapaas-contact-us" class="fa fa-linkedin fa-lg"></a></li> -->
+        <li><a href="/dapaas-contact-us">Get in touch</a></li>
+      </ul>
+    </div>
   </div>
 </div>
