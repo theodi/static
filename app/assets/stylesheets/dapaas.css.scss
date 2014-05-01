@@ -36,6 +36,13 @@ body {
 
     .btn {
       background-color: $dapaas-green;
+      border: solid 1px #666;
+      border-radius: 0;
+      color: #000;
+      height: 34px;
+      display: block;
+      float: left;
+      margin-left: -3px;
       &:hover {
         background-color: #ff6700;
         color: #fff;
