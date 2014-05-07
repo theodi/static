@@ -29,6 +29,32 @@ body {
     height: 45px;
   }
 
+  .navbar-form {
+    .form-control {
+      background-color: #fff;
+
+      &::-webkit-input-placeholder { color: #7491A3; }
+      &::-moz-placeholder { color: #7491A3; }
+      &:-moz-placeholder { color: #7491A3; }
+      &:-ms-input-placeholder { color: #7491A3; }
+    }
+
+    .btn {
+      background-color: $dapaas-green;
+      border: solid 1px #666;
+      border-radius: 0;
+      color: #000;
+      height: 34px;
+      display: block;
+      float: left;
+      margin-left: -3px;
+      &:hover {
+        background-color: #ff6700;
+        color: #fff;
+      }
+    }
+  }
+
   #dapaas-nav {
     li, a {
       height: 65px;
