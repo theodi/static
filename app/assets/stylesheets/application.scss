@@ -17,7 +17,7 @@
   @extend .article-sidebar;
   padding: 0;
   margin: 0;
-  
+
   h3 {
     margin: 0 0 17px 0;
     font-size: 28px;
@@ -29,7 +29,7 @@
   h3 {
     margin: 0 0 11px 0;
   }
-  
+
 }
 
 .module-course, .module-event {
@@ -48,14 +48,14 @@
   margin-bottom: 0;
   display: table;
   width: 100%;
-  
+
   .course-book {
     text-align: right;
   }
-  
+
   div {
     display: table-cell;
-    vertical-align: middle; 
+    vertical-align: middle;
   }
 }
 
@@ -120,11 +120,11 @@
 
 .modal-content {
   border-radius: 0;
-  
+
   .modal-header {
     background-color: $odiBlue;
     color: #fff;
-    
+
     .close {
       opacity: 0.4;
       filter: alpha(opacity=40);
@@ -161,7 +161,7 @@
   .fa-twitter {
     color: #4099FF;
   }
-  
+
   .fa-linkedin-square {
     color: #4875B4;
   }
@@ -170,6 +170,20 @@
 
 // Responsive Images
 
-  .article-body img { 
-     max-width: 100% 
+  .article-body img {
+     max-width: 100%
   }
+
+// Infinite scroll
+
+#infscr-loading {
+  position: absolute;
+  bottom: -40px;
+  margin: 40px 0 0 0;
+  width: 100%;
+  text-align: center;
+
+  img {
+    display: none;
+  }
+}
