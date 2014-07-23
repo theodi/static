@@ -68,6 +68,9 @@
     title: "Courses"
     link: "/courses"
    -
+    title: "International courses"
+    link: "/international-courses"
+   -
     title: "Friday lunchtime lectures"
     link: "/lunchtime-lectures"
    - 
@@ -90,6 +93,9 @@
   title: "News & blog"
   link: "/news"
   items:
+   -
+    title: "International node news"
+    link: "/nodes/news"
    -
     title: "Open data stories"
     link: "/stories"
