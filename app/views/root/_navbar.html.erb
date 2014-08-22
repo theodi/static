@@ -39,21 +39,23 @@
         </div>
       </div>
     <% end %>
-    <!--
-    <form class="navbar-form navbar-left">
-      <div class="form-group">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search ODI"/>
-          <input type="submit" value="Go" class="btn"/>
-        </div>
-      </div>
-    </form>
-    -->
+
     <ul class="nav navbar-nav navbar-right">
       <li><a href="/contact">Contact us</a></li>
       <li><a href="/newsletters">Newsletters</a></li>
 
       <!-- <li><a href="#about">Sign in</a></li> -->
     </ul>
+
+    <% unless mobile %>
+      <form class="navbar-form navbar-right" action="/search" method="get">
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search ODI" name="q"/>
+            <input type="submit" value="Go" class="btn"/>
+          </div>
+        </div>
+      </form>
+    <% end %>
   </div>
 </div>
