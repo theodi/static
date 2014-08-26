@@ -212,31 +212,36 @@ hr {
 
 .site-header {
     .navbar-form input {
-        background: #666;
         border: solid 1px #666;
         border-radius: 0;
-        color: #000;
-        height: 34px;
+        color: #111;
+        height: 30px;
+        font-size: 14px;
+        margin-top: 7px;
 
         // Without this the form elements are on inline-block and don't lay
         // themselves out properly in various IEs
         display: block;
         float: left;
 
+        &[type=text] {
+          color: #8e8c8c;
+        }
+
         &[type=submit] {
             text-transform: uppercase;
         }
     }
     ::-webkit-input-placeholder {
-        color: #000;
+        color: #ccc;
     }
 
     :-moz-placeholder {
-        color: #000;
+        color: #ccc;
     }
 
     :-ms-input-placeholder {
-        color: #000;
+        color: #ccc;
     }
 }
 
