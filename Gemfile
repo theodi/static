@@ -42,3 +42,4 @@ gem 'plek', '~> 1.7'
 gem 'jasmine', '1.1.2'
 
 gem 'govuk_frontend_toolkit', '0.31.0'
+gem 'font_assets'
