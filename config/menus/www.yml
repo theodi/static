@@ -74,14 +74,14 @@
     title: "International courses"
     link: "/international-courses"
    -
-    title: "Friday lunchtime lectures"
-    link: "/lunchtime-lectures"
+    title: "In-house training"
+    link: "/in-house-training"
+   - 
+    title: "ODI registered trainers"
+    link: "/what-is-an-odi-registered-trainer"
    - 
     title: "Guides"
     link: "/guides"
-   - 
-    title: "Case studies"
-    link: "/case-studies"
    - 
     title: "Training FAQs"
     link: "/training-faqs"
@@ -89,6 +89,9 @@
   title: "What's happening"
   link: "/events"
   items:
+   -
+    title: "Friday lunchtime lectures"
+    link: "/lunchtime-lectures"
    -
     title: "Previous events"
     link: "/events/previous"
@@ -102,6 +105,9 @@
    -
     title: "Open data stories"
     link: "/stories"
+   - 
+    title: "Case studies"
+    link: "/case-studies"
    -
     title: "Media assets"
     link: "/newsroom"
