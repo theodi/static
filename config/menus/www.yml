@@ -76,22 +76,22 @@
    -
     title: "In-house training"
     link: "/in-house-training"
-   -
-    title: "Friday lunchtime lectures"
-    link: "/lunchtime-lectures"
+   - 
+    title: "ODI registered trainers"
+    link: "/what-is-an-odi-registered-trainer"
    - 
     title: "Guides"
     link: "/guides"
    - 
     title: "Training FAQs"
     link: "/training-faqs"
-   - 
-    title: "ODI registered trainers"
-    link: "/what-is-an-odi-registered-trainer"
  - 
   title: "What's happening"
   link: "/events"
   items:
+   -
+    title: "Friday lunchtime lectures"
+    link: "/lunchtime-lectures"
    -
     title: "Previous events"
     link: "/events/previous"
