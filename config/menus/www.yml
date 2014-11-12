@@ -74,14 +74,14 @@
     title: "International courses"
     link: "/international-courses"
    -
+    title: "In-house training"
+    link: "/in-house-training"
+   -
     title: "Friday lunchtime lectures"
     link: "/lunchtime-lectures"
    - 
     title: "Guides"
     link: "/guides"
-   - 
-    title: "Case studies"
-    link: "/case-studies"
    - 
     title: "Training FAQs"
     link: "/training-faqs"
@@ -105,6 +105,9 @@
    -
     title: "Open data stories"
     link: "/stories"
+   - 
+    title: "Case studies"
+    link: "/case-studies"
    -
     title: "Media assets"
     link: "/newsroom"
