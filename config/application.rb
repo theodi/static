@@ -65,6 +65,7 @@ module Static
       Bariol_Thin.otf
       background-check.js
       infinitescroll.js
+      training-blocks.js
     }
 
     config.assets.css_compressor = :yui
