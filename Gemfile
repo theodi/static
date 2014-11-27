@@ -6,7 +6,7 @@ source 'https://BnrJb6FZyzspBboNJzYZ@gem.fury.io/govuk/'
 
 
 gem 'rails', '~> 3.2.13'
-gem 'foreman'
+gem 'foreman', '< 0.65.0'
 gem 'thin'
 gem 'dotenv-rails'
 
