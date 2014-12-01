@@ -25,10 +25,14 @@ function processCourses(courses,instances) {
 		}
 		running += '</ul></div>';
 		if (occurs.length < 1) {
-			running = '<div class="instances">Upcoming:<br/><div class="noInstances">No dates scheduled<br/><a class="courseButton btn btn-primary" href="mailto:training@theodi.org?subject=Interest in ' + title + ' course">Register interest</div></div>';
+			running = '<div class="instances">&nbsp;<br/><div class="noInstances">No dates scheduled<br/><a class="courseButton btn btn-primary" href="mailto:training@theodi.org?subject=Interest in ' + title + ' course">Register interest</div></div>';
 		}
 		block = '<li id="course" class="home-module shown"><div class="module2 module module-light module-highlight-1 module-colour-'+colourInc+' ">' + heading + icons + running + '</div></li>';
-		$("#courses").append(block);
+		if (occurs.length > 0) {
+			$("#courses").prepend(block);
+		} else {
+			$("#courses").append(block);
+		}
 		colourInc = colourInc + 1;
 		if (colourInc > 12) colourInc = 1;
 	}
@@ -47,6 +51,10 @@ function getCourseInstances(instances,key) {
 			ins = [];
 			ins["date"] = instance.details["date"];
 			ins["location"] = instance.details["location"];
+			ticketsAvailable = "true";
+			if (instance.details["ticketsAvailable"]) {
+				ticketsAvailable = instance.details["ticketsAvailable"];
+			}
 			if (instance.details["location"]) {
 				parts = instance.details["location"].split(",");
 				ins["location"] = parts[parts.length - 2].trim();
@@ -66,7 +74,7 @@ function getCourseInstances(instances,key) {
 				suffix = "rd";
 			}
 			ins["displayDate"] = day + suffix + " " + monthNames[run.getMonth()];
-			if (run > now) {
+			if (run > now && ticketsAvailable == "true") {
 				occurs.push(ins);
 			}
 		}
