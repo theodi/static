@@ -119,6 +119,10 @@ body {
       font-family: "Bariol", "Helvetica Neue", Helvetica, Arial, sans-serif;
       overflow: visible;
       white-space: normal;
+
+      a {
+        color: $dapaas-black;
+      }
     }
   }
 
