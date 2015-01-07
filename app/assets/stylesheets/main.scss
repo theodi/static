@@ -902,6 +902,11 @@ hr {
         .module2 {
                 height: 280px;
         }
+	h2 {
+		a {
+			border-bottom: 1px solid white;
+		}	
+	}
         ul, .course_properties {
                 width: 50%;
                 display: inline-block;

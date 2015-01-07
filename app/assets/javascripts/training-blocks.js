@@ -13,8 +13,8 @@ function processCourses(courses,instances) {
 		occurs = getCourseInstances(instances,key);
 		heading = "<h2><a href='" + link + "'>" + title + "</a></h2><p class='courseSub'>" + subtitle + "</p>";
 		icons = '<ul class="course_properties">';
-		icons += '<li><img src="//static.theodi.org/assets/training/'+duration.replace(/ /g,"_")+'.png" alt="'+duration+'"></img></li>';
-		icons += '<li><img src="//static.theodi.org/assets/training/f2f.png" alt="Face to face"></img></li>';
+		icons += '<li><img src="//static.theodi.org/assets/training/'+duration.replace(/ /g,"_")+'.png" title="'+duration+'" alt="'+duration+'"></img></li>';
+		icons += '<li><img src="//static.theodi.org/assets/training/f2f.png" title="Face to face training" alt="Face to face training"></img></li>';
 		icons += '</ul>';
 		running = '<div class="instances"><ul>';
 		for(k=0;k<occurs.length;k++) {
