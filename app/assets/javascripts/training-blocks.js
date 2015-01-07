@@ -13,10 +13,10 @@ function processCourses(courses,instances) {
 		occurs = getCourseInstances(instances,key);
 		heading = "<h2><a href='" + link + "'>" + title + "</a></h2><p class='courseSub'>" + subtitle + "</p>";
 		icons = '<ul class="course_properties">';
-		icons += '<li><img src="//static.theodi.org/assets/training/'+duration.replace(/ /g,"_")+'.png" alt="'+duration+'"></img></li>';
-		icons += '<li><img src="//static.theodi.org/assets/training/f2f.png" alt="Face to face"></img></li>';
+		icons += '<li><img src="//static.theodi.org/assets/training/'+duration.replace(/ /g,"_")+'.png" title="'+duration+'" alt="'+duration+'"></img></li>';
+		icons += '<li><img src="//static.theodi.org/assets/training/f2f.png" title="Face to face training" alt="Face to face training"></img></li>';
 		icons += '</ul>';
-		running = '<div class="instances">Upcoming: <small>('+occurs.length+')</small><ul>';
+		running = '<div class="instances"><ul>';
 		for(k=0;k<occurs.length;k++) {
 			ocr = occurs[k];
 			if (k < 2) {
@@ -25,7 +25,7 @@ function processCourses(courses,instances) {
 		}
 		running += '</ul></div>';
 		if (occurs.length < 1) {
-			running = '<div class="instances">&nbsp;<br/><div class="noInstances">No dates scheduled<br/><a class="courseButton btn btn-primary" href="mailto:training@theodi.org?subject=Interest in ' + title + ' course">Register interest</div></div>';
+			running = '<div class="instances">&nbsp;<br/><div class="noInstances"><a class="courseButton btn btn-primary" href="mailto:training@theodi.org?subject=Interest in ' + title + ' course">Register interest</div></div>';
 		}
 		block = '<li id="course" class="home-module shown"><div class="module2 module module-light module-highlight-1 module-colour-'+colourInc+' ">' + heading + icons + running + '</div></li>';
 		if (occurs.length > 0) {
