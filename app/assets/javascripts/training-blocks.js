@@ -74,7 +74,8 @@ function getCourseInstances(instances,key) {
 				suffix = "rd";
 			}
 			ins["displayDate"] = day + suffix + " " + monthNames[run.getMonth()];
-			if (run > now && ticketsAvailable == "true") {
+			// Removed the ticket availability check
+			if (run > now) {
 				occurs.push(ins);
 			}
 		}
