@@ -71,17 +71,14 @@
     title: "Courses"
     link: "/courses"
    -
-    title: "International courses"
-    link: "/international-courses"
-   -
     title: "In-house training"
     link: "/in-house-training"
    - 
-    title: "ODI registered trainers"
-    link: "/what-is-an-odi-registered-trainer"
-   - 
     title: "Guides"
     link: "/guides"
+   - 
+    title: "Meet the trainers"
+    link: "/training_team"
    - 
     title: "Training FAQs"
     link: "/training-faqs"
