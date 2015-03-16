@@ -1707,3 +1707,109 @@ img.node-logo {
   width: 250px;
   margin-left: 20px;
 }
+
+/* Events */
+
+.grid {
+
+    margin-top: 25px;
+    padding: 0;
+    margin-left: 15px;
+    margin-right: 0px;
+    @include box-sizing(border-box);
+}
+
+
+table.events {
+  font-family: helvetica;
+  font-size:18px;
+  color:#333333;
+  border-width: 2px;
+  margin-bottom: 10px;
+}
+
+
+table.events td {
+  border-width: 2px;
+  padding:15px;  
+ border-style: solid;
+  border-color: #ffffff;
+}
+
+
+.day {
+  font-family:helvetica;
+  text-align:center;
+  font-style:bold;
+  font-size:16px;
+}
+
+.date {
+  font-family:helvetica;
+  text-align:center;
+  font-style:bold;
+  font-size:50px;
+  line-height:0.1;
+}
+
+.month {
+  font-family:helvetica;
+  text-align:center;
+  font-style:bold;
+  font-size:16px;
+}
+
+.book{
+  float:right;
+  font-size: 14px;
+  padding:10,10,10,10;
+  margin-right:40px;
+  margin-top: 12px;
+  margin-left: 10px;
+  text-decoration: none;
+  text-align: center;
+  background-color:#d60303;
+  -moz-border-radius:28px;
+  -webkit-border-radius:28px;
+  border-radius:28px;
+  /*border:1px solid ;*/
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:arial;
+  font-size:14px;
+  padding:10px 21px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #2f6627;
+}
+
+.lunchtime-lecture .datebox{
+  background-color:#F8DE9D;
+  border-width:2px;
+}
+
+.lunchtime-lecture .event_details{
+  background-color:#f5f5f5;
+  border-width:2px; 
+}
+
+.open-data-challenge-series .datebox{
+  background-color:#BEE1D8;
+}
+
+.event_details{
+  background-color:#ffffff;
+}
+
+/*
+
+.book:hover {
+  background-color:#5cbf2a;
+}
+.book:active {
+  position:relative;
+  top:1px;
+}
+
+*/
+
