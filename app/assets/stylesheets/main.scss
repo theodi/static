@@ -6,32 +6,7 @@
     VARIABLES
 \*------------------------------------*/
 
-$odiBlue: #00b7ff;
-$odiBlueDark: #2254f4;
-$odiBlueLight: #08def9;
-$odiOrange: #ff6700;
-$odiYellow: #F9BC26;
-$odiRed: #d60303;
-$odiGrey: #888888;
-$odiGreyDark: #333333;
-$odiGreyLight: #BBBBBB;
-
-// Colour variables, primarily for home modules
-$odiColour1: #D60303; // red
-$odiColour2: $odiOrange; // orange
-$odiColour3: $odiYellow; // yellow
-$odiColour4: #67EF67; //light green
-$odiColour5: #0DBC37; // med green
-$odiColour6: #1dd3a7; // turquoise
-$odiColour7: $odiBlueDark; // dark blue
-$odiColour8: $odiBlue;
-$odiColour9: $odiBlueLight; // light blue
-$odiColour10: #ef3aab; // pink
-$odiColour11: #e6007c; // magenta
-$odiColour12: #b13198; // purple
-
-
-
+@import "variables";
 
 /*------------------------------------*\
     BASE
@@ -905,7 +880,7 @@ hr {
 	h2 {
 		a {
 			border-bottom: 1px solid white;
-		}	
+		}
 	}
         ul, .course_properties {
                 width: 50%;
@@ -1416,7 +1391,7 @@ table {
     width: 450px;
     padding: 30px 25px;
     background: $odiOrange;
-    color: white;
+    color: $odiNavBarText;
 }
 
 #login label, #register label {

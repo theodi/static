@@ -1,0 +1,49 @@
+.tag {
+  display: inline-block;
+
+  a {
+    color: $odiNavBarText;
+    background-color: $odiGreyDark;
+    display: inline-block;
+    padding: .25em .75em;
+    margin: .25em;
+  }
+}
+
+// Tweaks for other parts of the site.
+
+.article-main {
+  .tags h3 {
+    display: inline-block;
+  }
+}
+
+.tag-results ul {
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+.result-count {
+  font-size: .8em;
+  color: $odiGreyLight;
+  font-style: italic;
+}
+
+.tag-result {
+  font-size: .8em;
+  h2 a {
+    color: $odiGreyDark;
+  }
+
+  h3 {
+    font-size: 1em;
+    display: inline-block;
+  }
+
+  p {
+    max-width: 840px;
+  }
+}
