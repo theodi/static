@@ -12,9 +12,6 @@
     title: "Jobs"
     link: "/jobs"
    -
-    title: "Annual Report"
-    link: "/odis-first-year-annual-report"
-   -
      title: "Procurement"
      link: "/procurement"
    -
@@ -74,14 +71,33 @@
     title: "In-house training"
     link: "/in-house-training"
    - 
-    title: "Guides"
-    link: "/guides"
-   - 
     title: "Meet the trainers"
     link: "/training_team"
    - 
     title: "Training FAQs"
     link: "/training-faqs"
+ - 
+  title: "Publications"
+  link: "/publications"
+  items:
+   -
+    title: "Guides"
+    link: "/guides"
+   -
+    title: "Case Studies"
+    link: "/case-studies"
+   - 
+    title: "Open Data Stories"
+    link: "/stories"
+   -
+    title: "Open Data Roadmap 2015"
+    link: "/roadmap-uk-2015"
+   -
+    title: "Annual Report 2014"
+    link: "/odis-second-year-annual-report"
+   -
+    title: "Annual Report 2012-13"
+    link: "/odis-first-year-annual-report"
  - 
   title: "What's happening"
   link: "/events"
@@ -99,12 +115,6 @@
    -
     title: "International node news"
     link: "/nodes/news"
-   -
-    title: "Open data stories"
-    link: "/stories"
-   - 
-    title: "Case studies"
-    link: "/case-studies"
    -
     title: "Media assets"
     link: "/newsroom"
