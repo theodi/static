@@ -67,7 +67,7 @@ module Static
       infinitescroll.js
       training-blocks.js
       team-blocks.js
-      events.js
+      events_processor.js
     }
 
     config.assets.css_compressor = :yui
