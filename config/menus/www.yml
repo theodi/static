@@ -61,7 +61,7 @@
      title: "Partnership for Open Data"
      link: "http://theodi.org/odp4d"
  - 
-  title: "Learning & courses"
+  title: "What we offer"
   link: "/courses"
   items:
    -
@@ -76,6 +76,9 @@
    - 
     title: "Training FAQs"
     link: "/training-faqs"
+   - 
+    title: "Services"
+    link: "/services"
  - 
   title: "Publications"
   link: "/publications"
