@@ -6,6 +6,9 @@
     title: "About the ODI"
     link: "/about-us"
    -
+    title: "What is open data?"
+    link: "/what-is-open-data"
+   -
     title: "Team"
     link: "/team"
    -
@@ -61,7 +64,7 @@
      title: "Partnership for Open Data"
      link: "http://theodi.org/odp4d"
  - 
-  title: "Learning & courses"
+  title: "What we offer"
   link: "/courses"
   items:
    -
@@ -76,6 +79,9 @@
    - 
     title: "Training FAQs"
     link: "/training-faqs"
+   - 
+    title: "Services"
+    link: "/services"
  - 
   title: "Publications"
   link: "/publications"
