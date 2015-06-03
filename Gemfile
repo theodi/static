@@ -8,7 +8,7 @@ source 'https://BnrJb6FZyzspBboNJzYZ@gem.fury.io/govuk/'
 gem 'rails', '~> 3.2.13'
 gem 'foreman', '< 0.65.0'
 gem 'thin'
-gem 'dotenv-rails'
+gem 'dotenv-rails', '~> 1.0' # Fix to 1.x for rails 3
 
 gem 'aws-ses', :require => 'aws/ses' # Needed by exception_notification
 gem 'exception_notification', '~> 2.6.1'
