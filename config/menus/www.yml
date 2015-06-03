@@ -34,12 +34,6 @@
    link: "/get-involved"
    items:
     -
-     title: "Membership"
-     link: "/join-us"
-    -
-     title: "Our members"
-     link: "http://directory.theodi.org/members"
-    -
      title: "Startups"
      link: "/start-ups"
     -
@@ -67,6 +61,12 @@
   title: "What we offer"
   link: "/courses"
   items:
+   -
+     title: "Membership"
+     link: "/join-us"
+   -
+     title: "Our members"
+     link: "http://directory.theodi.org/members"
    -
     title: "Courses"
     link: "/courses"
