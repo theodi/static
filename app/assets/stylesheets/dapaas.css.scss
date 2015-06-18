@@ -18,6 +18,12 @@
 $dapaas-black: #272727;
 $dapaas-green: #00E756;
 
+$dapaas-green: #00E756;
+$dapaas-light-green: #0DBC37;
+$dapaas-dark-green: #0065DA;
+$dapaas-grey: #0DBC37;
+$dapaas-mid-grey: #006400;
+
 body {
   font-family: "Bariol", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -150,6 +156,13 @@ body {
     font-size: 17px;
   }
 }
+
+.module-colour-13 { background-color: $dapaas-green; }
+.module-colour-14 { background-color: $dapaas-light-green; }
+.module-colour-15 { background-color: $dapaas-dark-green; }
+.module-colour-16 { background-color: $dapaas-black; }
+.module-colour-17 { background-color: $dapaas-grey; }
+.module-colour-18 { background-color: $dapaas-mid-grey; }
 
 #dapaas-footer {
   background-color: $dapaas-black;
