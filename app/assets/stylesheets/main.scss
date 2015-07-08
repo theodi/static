@@ -1788,3 +1788,15 @@ table.events td {
 
 */
 
+.booking_url {
+  background: $odiRed;
+  padding: 15px;
+}
+
+a.booking_url {
+  display: inline-block;
+}
+
+.module:hover .booking_url {
+  background-color: $odiGrey;
+}
