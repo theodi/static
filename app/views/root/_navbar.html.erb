@@ -46,7 +46,8 @@
       <!-- <li><a href="#about">Sign in</a></li> -->
     </ul>
 
-    <% unless mobile %>
+    <!-- Patched to remove search bar. To reenable, just remove `or true` -->
+    <% unless mobile or true %>
       <form class="navbar-form navbar-right" action="/search" method="get">
         <div class="form-group">
           <div class="input-group">
