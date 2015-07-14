@@ -462,7 +462,7 @@ hr {
 
 }
 
-.home-module {
+.home-module, .grid-sizer {
 
     list-style: none;
     @include box-sizing(border-box);
@@ -946,7 +946,7 @@ hr {
 
 .people-team {
 
-    .home-module {
+    .home-module, .grid-sizer {
 
         @media (min-width: 992px) {
 
