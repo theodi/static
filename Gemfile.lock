@@ -123,7 +123,7 @@ GEM
     rake (10.4.2)
     rdoc (3.12.2)
       json (~> 1.4)
-    ref (1.0.5)
+    ref (2.0.0)
     router-client (2.0.3)
       builder
       null_logger
