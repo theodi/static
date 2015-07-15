@@ -68,6 +68,7 @@ module Static
       training-blocks.js
       team-blocks.js
       events_processor.js
+      live-filter.js
     }
 
     config.assets.css_compressor = :yui
