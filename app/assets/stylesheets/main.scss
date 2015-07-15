@@ -1800,3 +1800,13 @@ a.booking_url {
 .module:hover .booking_url {
   background-color: $odiGrey;
 }
+
+.header-wrap {
+    position: relative;
+}
+
+.header-right {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+}
