@@ -29,7 +29,7 @@
    -
      title: "Dashboards"
      link: "http://dashboards.theodi.org/"
- - 
+ -
    title: "Get involved"
    link: "/get-involved"
    items:
@@ -57,7 +57,7 @@
     -
      title: "Partnership for Open Data"
      link: "http://theodi.org/odp4d"
- - 
+ -
   title: "What we offer"
   link: "/courses"
   items:
@@ -73,16 +73,25 @@
    -
     title: "In-house training"
     link: "/in-house-training"
-   - 
+   -
     title: "Meet the trainers"
     link: "/training_team"
-   - 
+   -
     title: "Training FAQs"
     link: "/training-faqs"
-   - 
+   -
     title: "Services"
     link: "/services"
- - 
+ -
+  title: "Themes"
+  items:
+   -
+    title: "Open cities"
+    link: "/smart-cities"
+   -
+    title: "Data Infrastructure"
+    link: "/who-owns-our-data-infrastructure"
+ -
   title: "Publications"
   link: "/publications"
   items:
@@ -92,7 +101,7 @@
    -
     title: "Case Studies"
     link: "/case-studies"
-   - 
+   -
     title: "Open Data Stories"
     link: "/stories"
    -
@@ -104,17 +113,20 @@
    -
     title: "Annual Report 2012-13"
     link: "/odis-first-year-annual-report"
- - 
+ -
   title: "What's happening"
   link: "/events"
   items:
+   -
+    title: "Upcoming events"
+    link: "/events"
    -
     title: "Friday lunchtime lectures"
     link: "/lunchtime-lectures"
    -
     title: "Previous events"
     link: "/events/previous"
- - 
+ -
   title: "News & blog"
   link: "/news"
   items:
