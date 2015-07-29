@@ -18,9 +18,6 @@
      title: "Procurement"
      link: "/procurement"
    -
-     title: "Data as culture"
-     link: "/culture"
-   -
      title: "Space"
      link: "/space"
    -
@@ -91,6 +88,12 @@
    -
     title: "Data Infrastructure"
     link: "/who-owns-our-data-infrastructure"
+   -
+    title: "Open Data Roadmap 2015"
+    link: "/roadmap-uk-2015"
+   -
+    title: "Data as culture"
+    link: "/culture"
  -
   title: "Publications"
   link: "/publications"
@@ -105,16 +108,13 @@
     title: "Open Data Stories"
     link: "/stories"
    -
-    title: "Open Data Roadmap 2015"
-    link: "/roadmap-uk-2015"
-   -
     title: "Annual Report 2014"
     link: "/odis-second-year-annual-report"
    -
     title: "Annual Report 2012-13"
     link: "/odis-first-year-annual-report"
  -
-  title: "What's happening"
+  title: "Events"
   link: "/events"
   items:
    -
