@@ -83,6 +83,15 @@
     title: "Services"
     link: "/services"
  -
+  title: "Themes"
+  items:
+   -
+    title: "Open cities"
+    link: "/smart-cities"
+   -
+    title: "Data Infrastructure"
+    link: "/who-owns-our-data-infrastructure"
+ -
   title: "Publications"
   link: "/publications"
   items:
