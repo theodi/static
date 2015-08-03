@@ -6,7 +6,7 @@
    title: "Work packages"
    link: "/dapaas-work-packages"
   -
-   title: "FAQ"
+   title: "DaPaaS FAQ"
    link: "/dapaas-faq"
  -
    title: "Partners"
@@ -25,3 +25,6 @@
   title: "News"
   link: "/dapaas-news"
   items:
+   -
+   title: "Questionnaire"
+   link: "/dapaas-questionnaire"
