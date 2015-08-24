@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-source 'https://BnrJb6FZyzspBboNJzYZ@gem.fury.io/govuk/'
 
 #ruby=ruby-1.9.3
 #ruby-gemset=quirkafleeg-static
@@ -41,4 +40,4 @@ end
 gem 'plek', '~> 1.7'
 gem 'jasmine', '1.1.2'
 
-gem 'govuk_frontend_toolkit', '0.31.0'
+gem 'govuk_frontend_toolkit', '~> 0.41.2'
