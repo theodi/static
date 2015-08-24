@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-source 'https://BnrJb6FZyzspBboNJzYZ@gem.fury.io/govuk/'
 
 #ruby=ruby-1.9.3
 #ruby-gemset=quirkafleeg-static
@@ -18,7 +17,7 @@ gem 'jquery-rails'
 gem 'font-awesome-rails'
 
 group :router do
-  gem 'router-client', '2.0.3', :require => 'router/client'
+  # gem 'router-client', '2.0.3', :require => 'router/client'
 end
 
 group :assets do
@@ -41,4 +40,4 @@ end
 gem 'plek', '~> 1.7'
 gem 'jasmine', '1.1.2'
 
-gem 'govuk_frontend_toolkit', '0.31.0'
+gem 'govuk_frontend_toolkit', '~> 0.41.2'
