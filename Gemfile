@@ -17,7 +17,7 @@ gem 'jquery-rails'
 gem 'font-awesome-rails'
 
 group :router do
-  gem 'router-client', '2.0.3', :require => 'router/client'
+  # gem 'router-client', '2.0.3', :require => 'router/client'
 end
 
 group :assets do
