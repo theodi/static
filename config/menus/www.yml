@@ -85,13 +85,16 @@
     title: "Open cities"
     link: "/smart-cities"
    -
+    title: "Agriculture and nutrition"
+    link: "/agriculture-nutrition-open-data"
+   -
     title: "Data infrastructure"
     link: "/who-owns-our-data-infrastructure"
    -
-    title: "Open Data Roadmap 2015"
+    title: "Open data roadmap 2015"
     link: "/roadmap-uk-2015"
    -
-    title: "Data as culture"
+    title: "Data as Culture"
     link: "/culture"
  -
   title: "Publications"
@@ -101,16 +104,16 @@
     title: "Guides"
     link: "/guides"
    -
-    title: "Case Studies"
+    title: "Case studies"
     link: "/case-studies"
    -
-    title: "Open Data Stories"
+    title: "Open data stories"
     link: "/stories"
    -
     title: "Annual Report 2014"
     link: "/odis-second-year-annual-report"
    -
-    title: "Annual Report 2012-13"
+    title: "Annual Report 2013"
     link: "/odis-first-year-annual-report"
  -
   title: "Events"
