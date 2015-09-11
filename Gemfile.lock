@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/alphagov/govuk_frontend_toolkit.git
+  revision: 0565bc7d5dae1d2bd13547bd6deff7a9076598d3
+  tag: v0.3.1
+  specs:
+    govuk_frontend_toolkit (0.3.1)
+      rails (>= 3.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -63,9 +71,6 @@ GEM
     foreman (0.63.0)
       dotenv (>= 0.7)
       thor (>= 0.13.6)
-    govuk_frontend_toolkit (0.41.2)
-      rails (>= 3.1.0)
-      sass (>= 3.2.0)
     hike (1.2.3)
     i18n (0.7.0)
     jasmine (1.1.2)
@@ -184,7 +189,7 @@ DEPENDENCIES
   exception_notification (~> 2.6.1)
   font-awesome-rails
   foreman (< 0.65.0)
-  govuk_frontend_toolkit (~> 0.41.2)
+  govuk_frontend_toolkit!
   jasmine (= 1.1.2)
   jquery-rails
   lograge (~> 0.1.0)

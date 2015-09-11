@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 #ruby=ruby-1.9.3
 #ruby-gemset=quirkafleeg-static
 
-
 gem 'rails', '~> 3.2.13'
 gem 'foreman', '< 0.65.0'
 gem 'thin'
@@ -15,10 +14,6 @@ gem 'lograge', '~> 0.1.0'
 
 gem 'jquery-rails'
 gem 'font-awesome-rails'
-
-group :router do
-  # gem 'router-client', '2.0.3', :require => 'router/client'
-end
 
 group :assets do
   gem "therubyracer", "~> 0.12.0"
@@ -40,4 +35,4 @@ end
 gem 'plek', '~> 1.7'
 gem 'jasmine', '1.1.2'
 
-gem 'govuk_frontend_toolkit', '~> 0.41.2'
+gem 'govuk_frontend_toolkit', github: 'alphagov/govuk_frontend_toolkit', tag: 'v0.3.1'
