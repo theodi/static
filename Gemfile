@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 #ruby=ruby-1.9.3
 #ruby-gemset=quirkafleeg-static
 
-
 gem 'rails', '~> 3.2.13'
 gem 'foreman', '< 0.65.0'
 gem 'thin'
@@ -40,4 +39,4 @@ end
 gem 'plek', '~> 1.7'
 gem 'jasmine', '1.1.2'
 
-gem 'govuk_frontend_toolkit', '0.31.0'
+gem 'govuk_frontend_toolkit', github: 'alphagov/govuk_frontend_toolkit', tag: 'v0.3.1'
