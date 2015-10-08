@@ -1706,7 +1706,7 @@ table.events {
 
 table.events td {
   border-width: 2px;
-  padding:15px;  
+  padding:15px;
  border-style: solid;
   border-color: #ffffff;
 }
@@ -1765,7 +1765,7 @@ table.events td {
 
 .lunchtime-lecture .event_details{
   background-color:#f5f5f5;
-  border-width:2px; 
+  border-width:2px;
 }
 
 .open-data-challenge-series .datebox{
@@ -1809,4 +1809,37 @@ a.booking_url {
     position: absolute;
     top: 12px;
     right: 15px;
+}
+
+/* Summer Showcase */
+
+.blog-box{
+  background: #00b7ff;
+  padding:15px 15px 15px 30px;
+  margin-bottom:10px ;
+  width:800px;
+  max-width:100%;
+  font-family:helvetica neue;
+  font-size:20px;
+  color: #ffffff;
+  text-decoration: none;
+
+}
+
+.blog-box-opacity{
+  background: #00b7ff;
+  padding:15px 15px 15px 30px;
+  margin-bottom:10px ;
+  width:800px;
+  max-width:100%;
+  font-family:helvetica neue;
+  font-size:20px;
+  color: #ffffff;
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+.story-link{
+  text-decoration:none;
+  color: #ffffff;
 }
