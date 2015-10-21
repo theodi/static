@@ -1,7 +1,37 @@
+var done = [];
+colourInc = 0;
+var colors = [2,10,7];
 function processCourses(courses,instances) {
-	colourInc = 1;
-	for (i=0;i<courses.length;i++) {
-		course = courses[i];
+	occurs = [];
+	var monthNames = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ];
+	instances.sort(function(a,b) {
+		return new Date(a.details["date"]) - new Date(b.details["date"]);
+	});
+	for (p=0;p<instances.length;p++) {
+		instance = instances[p];
+		coursename = instance.details["course"];
+		if (!done[coursename]) {
+			for (q=0;q<courses.length;q++) {
+				course = courses[q];
+				if (course["slug"] == coursename) {
+					done[coursename] = true;
+					processCourse(course,instances);
+				} 	
+			}
+		}
+	}
+	for (r=0;r<courses.length;r++) {
+		course = courses[r];
+		coursename = course["slug"];
+		if (!done[coursename]) {
+			processCourse(course,instances);
+			done[coursename] = true;
+		}
+	}
+}
+
+function processCourse(course,instances) {
 		title = course["title"];
 		link = course["web_url"];
 		subtitle = course.details["excerpt"];
@@ -22,22 +52,17 @@ function processCourses(courses,instances) {
 		for(k=0;k<occurs.length;k++) {
 			ocr = occurs[k];
 			if (k < 2) {
-				running += '<li><span id="courseLoc">' + ocr["displayDate"] + ' <small>('+ocr["location"] + ')</small></span><a href="'+ocr["url"]+'" class="courseButton bookButton btn btn-primary">Book</a></li>';
+				running += '<li><span id="courseLoc">' + ocr["displayDate"] + ' <small>('+ocr["location"] + ')</small></span><a href="'+ocr["url"]+'" class="courseButton bookButton btn btn-primary" style="border: 1px solid #333;">Book</a></li>';
 			}
 		}
 		running += '</ul></div>';
 		if (occurs.length < 1) {
-			running = '<div class="instances">&nbsp;<br/><div class="noInstances"><a class="courseButton btn btn-primary" href="mailto:training@theodi.org?subject=Interest in ' + title + ' course">Register interest</div></div>';
+			running = '<div class="instances">&nbsp;<br/><div class="noInstances"><a class="courseButton btn btn-primary" href="mailto:training@theodi.org?subject=Interest in ' + title + ' course" style="border: 1px solid #333;">Register interest</div></div>';
 		}
-		block = '<li id="course" class="home-module shown"><div class="module2 module module-light module-highlight-1 module-colour-'+colourInc+' ">' + heading + icons + running + '</div></li>';
-		if (occurs.length > 0) {
-			$("#courses").prepend(block);
-		} else {
-			$("#courses").append(block);
-		}
+		block = '<li id="course" class="home-module shown"><div class="module2 module module-light module-colour-'+colors[colourInc]+' ">' + heading + icons + running + '</div></li>';
+		$("#courses").append(block);
 		colourInc = colourInc + 1;
-		if (colourInc > 12) colourInc = 1;
-	}
+		if (colourInc > 2) colourInc = 0;
 }
 
 function getCourseInstances(instances,key) {
