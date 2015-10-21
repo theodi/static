@@ -1277,6 +1277,7 @@ hr {
     .pull-left {
       margin-right: 10px;
       margin-bottom: 15px;
+      max-width: 100%; //This was added by PL to ensure aside boxes are responsive (21/10/2015)
     }
 
 }
