@@ -3,15 +3,17 @@ function processCourses(courses,instances) {
 	for (i=0;i<courses.length;i++) {
 		course = courses[i];
 		title = course["title"];
-		subtitle = course.details["excerpt"];
-		if (subtitle.indexOf(".") > 0) {
-			subtitle = subtitle.split(".")[0] + ".";
-		}
 		link = course["web_url"];
+		subtitle = course.details["excerpt"];
+		if (subtitle.length > 140) {
+			subtitle = subtitle.substring(0,140);
+			subtitle = subtitle.substring(0,subtitle.lastIndexOf(' '));
+			subtitle = subtitle + "...<a style='color: #333; text-decoration: underline; font-size: 0.9em;' href='" + link + "'>read more</a>";
+		} 
 		duration = course.details["length"];
 		key = course["slug"];
 		occurs = getCourseInstances(instances,key);
-		heading = "<h2><a href='" + link + "'>" + title + "</a></h2><p class='courseSub'>" + subtitle + "</p>";
+		heading = "<h2 style='font-size: 1.5em;'><a href='" + link + "'>" + title + "</a></h2><p class='courseSub'>" + subtitle + "</p>";
 		icons = '<ul class="course_properties">';
 		icons += '<li><img src="//static.theodi.org/assets/training/'+duration.replace(/ /g,"_")+'.png" title="'+duration+'" alt="'+duration+'"></img></li>';
 		icons += '<li><img src="//static.theodi.org/assets/training/f2f.png" title="Face to face training" alt="Face to face training"></img></li>';
@@ -56,8 +58,12 @@ function getCourseInstances(instances,key) {
 				ticketsAvailable = instance.details["ticketsAvailable"];
 			}
 			if (instance.details["location"]) {
-				parts = instance.details["location"].split(",");
-				ins["location"] = parts[parts.length - 2].trim();
+				if (instance.details["location"].indexOf('London') > 0 || instance.details["location"].indexOf('65 Clifton Street') > 0) {
+					ins["location"] = "London";
+				} else {
+					parts = instance.details["location"].split(",");
+					ins["location"] = parts[parts.length - 2].trim();
+				}
 			}
 			ins["url"] = instance.details["url"];
 			now = new Date();
