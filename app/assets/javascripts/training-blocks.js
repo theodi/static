@@ -59,7 +59,7 @@ function processCourse(course,instances) {
 		if (occurs.length < 1) {
 			running = '<div class="instances">&nbsp;<br/><div class="noInstances"><a class="courseButton btn btn-primary" href="mailto:training@theodi.org?subject=Interest in ' + title + ' course" style="border: 1px solid #333;">Register interest</div></div>';
 		}
-		block = '<li id="course" class="home-module shown"><div class="module2 module module-light module-colour-'+colors[colourInc]+' ">' + heading + icons + running + '</div></li>';
+		block = '<li id="course" class="home-module shown"><div class="module2 module module-light module-colour-'+colors[colourInc]+' module-highlight-1">' + heading + icons + running + '</div></li>';
 		$("#courses").append(block);
 		colourInc = colourInc + 1;
 		if (colourInc > 2) colourInc = 0;
