@@ -1,6 +1,11 @@
 var done = [];
 colourInc = 0;
 var colors = [2,10,7];
+
+$.ajaxSetup ({
+    // Disable caching of AJAX responses
+    cache: false
+});
 function processCourses(courses,instances) {
 	occurs = [];
 	var monthNames = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun",
@@ -77,6 +82,7 @@ function getCourseInstances(instances,key) {
 		if (instance.details["course"] == key) {
 			ins = [];
 			ins["date"] = instance.details["date"];
+			ins["price"] = instance.details["price"];
 			ins["location"] = instance.details["location"];
 			ticketsAvailable = "true";
 			if (instance.details["ticketsAvailable"]) {
@@ -112,4 +118,28 @@ function getCourseInstances(instances,key) {
 		}
 	}
 	return occurs;
+}
+
+function renderInstances(instances) {
+        console.log(instances);
+        for(i=0;i<instances.length;i++) {
+                ocr = instances[i];
+                html = '<tr><td>' + ocr["displayDate"] + ' <small>('+ocr["location"] + ')</small></td><td>'+ocr["price"] + '</td><td><a href="'+ocr["url"]+'" class="courseButton bookButton btn btn-primary" style="border: 1px solid #333;">Book</a></td></tr>';
+                $('#instances').append(html);
+        }
+}
+
+function getInstances(course) {
+        course = window.location.pathname;
+        course = course.substring(course.lastIndexOf('/')+1,course.length);
+        console.log(course);
+        var instances;
+        $.getJSON( "https://odi-courses-data.herokuapp.com/query.php?course="+course, function( data ) {
+             instances = getCourseInstances(data.results,course);
+             renderInstances(instances);
+             $('#instances').show();
+	})
+        .error(function() {
+                $('#instances').hide();
+        });
 }
