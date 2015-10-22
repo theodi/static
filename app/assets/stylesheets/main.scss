@@ -938,7 +938,15 @@ hr {
         }
 }
 
-
+#instances {
+	border: none;
+	display: none;
+	width: 95%;
+	margin: 20px;
+	#coursedate {
+		width: 50%;
+	}
+}
 
 /*------------------------------------*\
     PEOPLE MODULES
