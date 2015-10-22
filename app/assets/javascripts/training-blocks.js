@@ -137,7 +137,8 @@ function getInstances(course) {
         $.getJSON( "https://odi-courses-data.herokuapp.com/query.php?course="+course, function( data ) {
              instances = getCourseInstances(data.results,course);
              renderInstances(instances);
-        })
+             $('#instances').show();
+	})
         .error(function() {
                 $('#instances').hide();
         });
