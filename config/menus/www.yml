@@ -1,149 +1,29 @@
- -
-  title: "About"
-  link: "/about"
-  items:
-   -
-    title: "About the ODI"
-    link: "/about-us"
-   -
-    title: "What is open data?"
-    link: "/what-is-open-data"
-   -
-    title: "Team"
-    link: "/team"
-   -
-    title: "Jobs"
-    link: "/jobs"
-   -
-     title: "Procurement"
-     link: "/procurement"
-   -
-     title: "Space"
-     link: "/space"
-   -
-     title: "FAQ"
-     link: "/faq"
-   -
-     title: "Dashboards"
-     link: "http://dashboards.theodi.org/"
- -
-   title: "Get involved"
-   link: "/get-involved"
-   items:
-    -
-     title: "Startups"
-     link: "/start-ups"
-    -
-     title: "Research"
-     link: "/research"
-    -
-     title: "Open Data Certificates"
-     link: "https://certificates.theodi.org/"
-    -
-     title: "Nodes"
-     link: "/nodes"
-    -
-     title: "Challenge series"
-     link: "/opendatachallengeseries"
-    -
-     title: "Public consultations"
-     link: "/public-consultations"
-    -
-     title: "Consultation responses"
-     link: "/consultation-responses"
-    -
-     title: "Partnership for Open Data"
-     link: "http://theodi.org/odp4d"
- -
-  title: "What we offer"
-  items:
-   -
-     title: "Membership"
-     link: "/join-us"
-   -
-     title: "Our members"
-     link: "http://directory.theodi.org/members"
-   -
-    title: "Courses"
-    link: "/courses"
-   -
-    title: "In-house training"
-    link: "/in-house-training"
-   -
-    title: "Meet the trainers"
-    link: "/training_team"
-   -
-    title: "Training FAQs"
-    link: "/training-faqs"
-   -
-    title: "Services"
-    link: "/services"
- -
-  title: "Themes"
-  items:
-   -
-    title: "Open cities"
-    link: "/smart-cities"
-   -
-    title: "Agriculture and nutrition"
-    link: "/agriculture-nutrition-open-data"
-   -
-    title: "Data infrastructure"
-    link: "/who-owns-our-data-infrastructure"
-   -
-    title: "Open data roadmap 2015"
-    link: "/roadmap-uk-2015"
-   -
-    title: "Data as Culture"
-    link: "/culture"
-   -
-    title: "Global development"
-    link: "/global-development-open-data"
-   -
-    title: "Generation open"
-    link: "/generation-o"
-   -
-    title: "Finance"
-    link: "/finance"
- -
-  title: "Publications"
-  link: "/publications"
-  items:
-   -
-    title: "Guides"
-    link: "/guides"
-   -
-    title: "Case studies"
-    link: "/case-studies"
-   -
-    title: "Open data stories"
-    link: "/stories"
-   -
-    title: "Annual Report 2014"
-    link: "/odis-second-year-annual-report"
-   -
-    title: "Annual Report 2013"
-    link: "/odis-first-year-annual-report"
- -
-  title: "Events"
-  link: "/events"
-  items:
-   -
-    title: "Upcoming events"
-    link: "/events"
-   -
-    title: "Friday lunchtime lectures"
-    link: "/lunchtime-lectures"
-   -
-    title: "Previous events"
-    link: "/events/previous"
- -
-  title: "News & blog"
-  link: "/news"
-  items:
-   -
-    title: "International node news"
-    link: "/nodes/news"
-   -
-    title: "Media assets"
-    link: "/newsroom"
+-
+ title: "News & blog"
+ link: "/news"
+ items:
+-
+ title: "Get involved"
+ link: "/get-involved"
+ items:
+-
+ title: "Our global network"
+ link:  "/our-network"
+ items:
+-
+ title: "Events"
+ link: "/events"
+ items:
+-
+ title: "Our focus"
+ link:  "/our-focus"
+ items:
+-
+ title: "Publications"
+ link: "/publications"
+ items:
+-
+ title: "About the ODI"
+ link: "/about"
+ items:
+-
