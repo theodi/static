@@ -30,7 +30,7 @@ group :test do
 end
 
 group :production do
-  gem 'airbrake'
+  gem 'airbrake', '~> 4.3.4'
 end
 
 gem 'plek', '~> 1.7'
