@@ -45,7 +45,7 @@ function processCourse(course,instances) {
 			subtitle = subtitle.substring(0,subtitle.lastIndexOf(' '));
 			subtitle = subtitle + "...<a style='color: #333; text-decoration: underline; font-size: 0.9em;' href='" + link + "'>read more</a>";
 		} 
-		duration = course.details["length"];
+		duration = course.details["length"].trim();
 		key = course["slug"];
 		occurs = getCourseInstances(instances,key);
 		heading = "<h2 style='font-size: 1.5em;'><a href='" + link + "'>" + title + "</a></h2><p class='courseSub'>" + subtitle + "</p>";
@@ -93,7 +93,11 @@ function getCourseInstances(instances,key) {
 					ins["location"] = "London";
 				} else {
 					parts = instance.details["location"].split(",");
-					ins["location"] = parts[parts.length - 2].trim();
+					if (parts.length > 1) {
+						ins["location"] = parts[parts.length - 2].trim();
+					} else {
+						ins["location"] = instance.details["location"];
+					}
 				}
 			}
 			ins["url"] = instance.details["url"];
