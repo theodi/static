@@ -1829,7 +1829,7 @@ a.booking_url {
   width:800px;
   max-width:100%;
   font-family:helvetica neue;
-  font-size:20px;
+  font-size:18px;
   color: #ffffff;
   text-decoration: none;
 
@@ -1842,7 +1842,7 @@ a.booking_url {
   width:800px;
   max-width:100%;
   font-family:helvetica neue;
-  font-size:20px;
+  font-size:18px;
   color: #ffffff;
   opacity: 0.6;
   text-decoration: none;
@@ -1851,4 +1851,15 @@ a.booking_url {
 .story-link{
   text-decoration:none;
   color: #ffffff;
+}
+
+/* HR Styles */
+
+.hr-black {
+  height:2px;
+  border:none;
+  color:#f1f1f1;
+  background-color:#f1f1f1;
+  width:40%;
+  margin-bottom: 30px;
 }
