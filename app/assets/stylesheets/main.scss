@@ -76,7 +76,7 @@ blockquote {
 margin: 10px 0;
 padding: 0.5em 0;
 quotes: "\201C" "\201D" "\2018" "\2019";
- color: #8e8c8c;
+ color: #4c4c4c;
 
     p {
   display: inline;
@@ -88,13 +88,23 @@ quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
 blockquote:before {
-  color: #ccc;
+  color: #191919;
   content: open-quote;
   font-size: 4.5em;
   line-height: 0.1em;
   margin-right: 6px;
   margin-left: -3px;
   vertical-align: -0.4em;
+}
+
+blockquote:after {
+  color: #191919;
+  content: close-quote;
+  font-size: 4.5em;
+  line-height: 0.1em;
+  margin-right: -3px;
+  margin-left: 10px;
+  vertical-align: -0.5em;
 }
 
 figcaption {
