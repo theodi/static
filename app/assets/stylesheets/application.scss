@@ -189,3 +189,9 @@
     display: none;
   }
 }
+
+// Hide page furniture from printers
+
+.article-sidebar, .site-footer, .navbar-right {
+  @extend .hidden-print;
+}
