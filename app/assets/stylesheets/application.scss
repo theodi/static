@@ -13,7 +13,7 @@
 @import "main";
 @import "font-awesome";
 @import "ui/tags";
-
+@import "slick";
 
 .course-sidebar {
   @extend .article-sidebar;
@@ -194,4 +194,92 @@
 
 .article-sidebar, .site-footer, .navbar-right {
   @extend .hidden-print;
+}
+
+#speakers {
+  position: relative;
+  margin: 35px 0;
+
+  .people-team {
+    padding: 0 10% 0 0;
+    margin-bottom: 10px;
+
+    li {
+      height: 350px;
+
+      div {
+        width: 99%;
+
+        a {
+          padding: 0;
+        }
+
+        img {
+          width: 80%;
+          position: relative;
+          top: 0;
+          left: 0;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  #speaker-nav {
+    position: absolute;
+    right: 60px;
+    top:0;
+    display: inline-block;
+    height: 350px;
+
+    i {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      opacity: 0.2;
+      font-size: 120px;
+      font-weight: lighter;
+    }
+  }
+
+  #all-speakers {
+    font-size: 1.1em;
+    font-weight: normal;
+    text-align: right;
+    margin: 20px 0 20px 0;
+
+    a {
+      color: #428bca;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #speakers {
+    .people-team {
+      li {
+        height: auto;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        padding: 0 10px 0 0;
+        margin: 0;
+
+        div {
+          height: 100px;
+          background-color: #fff;
+          padding: 0;
+          margin: 0;
+
+          img {
+            width: 100px;
+          }
+
+          h1, p {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }
