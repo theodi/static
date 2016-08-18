@@ -136,6 +136,21 @@ hr {
 }
 
 /*------------------------------------*\
+    TABLES
+\*------------------------------------*/
+
+// Styles below are for the table on the Open Banking Membership page
+
+.tg-mem  {border-collapse:collapse;border-spacing:0;border-color:#ccc;border:none;}
+.tg-mem td{font-family:Arial, sans-serif;font-size:14px;padding:20px 20px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg-mem th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:20px 20px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg-mem .tg-qnmb{font-weight:bold;font-size:16px;text-align:center}
+.tg-mem .tg-0wez{font-weight:bold;font-size:16px;background-color:#efefef;text-align:center}
+.tg-mem .tg-gb7b{font-weight:bold;font-size:16px;background-color:#efefef;color:#000000;text-align:center}
+.tg-mem .tg-yw4l{vertical-align:top}
+
+
+/*------------------------------------*\
     HEADER
 \*------------------------------------*/
 
@@ -1327,6 +1342,14 @@ figure.pull-right {
     color: #8e8c8c;
     font-size: 14px;
     margin-bottom: 30px;
+
+    img {
+      margin-left: 8px;
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      border-radius:50%;
+      overflow: hidden;
+    }
 }
 
 table {
