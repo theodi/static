@@ -2,6 +2,11 @@ var done = [];
 colourInc = 0;
 var colors = [2,10,7];
 
+var gaClientId = ""
+ga(function(tracker) {
+  gaClientId = tracker.get('clientId');
+});
+
 $.ajaxSetup ({
     // Disable caching of AJAX responses
     cache: false
@@ -57,7 +62,7 @@ function processCourse(course,instances) {
 		for(k=0;k<occurs.length;k++) {
 			ocr = occurs[k];
 			if (k < 2) {
-				running += '<li><span id="courseLoc">' + ocr["displayDate"] + ' <small>('+ocr["location"] + ')</small></span><a href="'+ocr["url"]+'" class="courseButton bookButton btn btn-primary" style="border: 1px solid #333;" onclick="onBookButton(\''+title+'\',\''+ocr["shortDate"]+'\')">Book</a></li>';
+				running += '<li><span id="courseLoc">' + ocr["displayDate"] + ' <small>('+ocr["location"] + ')</small></span><a href="'+ocr["url"]+'?_eboga='+gaClientId+'" class="courseButton bookButton btn btn-primary" style="border: 1px solid #333;" onclick="onBookButton(\''+title+'\',\''+ocr["shortDate"]+'\')">Book</a></li>';
 			}
 		}
 		running += '</ul></div>';
