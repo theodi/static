@@ -261,21 +261,30 @@
         height: auto;
         display: inline-block;
         width: 100px;
-        height: 100px;
         padding: 0 10px 0 0;
         margin: 0;
+        vertical-align: top;
 
         div {
-          height: 100px;
           background-color: #fff;
           padding: 0;
           margin: 0;
 
           img {
             width: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 0 7px 0;
           }
 
-          h1, p {
+          h1 {
+            font-size: 13px;
+            color: #111;
+            line-height: 1.4em;
+            text-align: center;
+          }
+
+          p {
             display: none;
           }
         }
