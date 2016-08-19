@@ -2,6 +2,11 @@ var done = [];
 colourInc = 0;
 var colors = [2,10,7];
 
+var gaClientId = ""
+ga(function(tracker) {
+  gaClientId = tracker.get('clientId');
+});
+
 $.ajaxSetup ({
     // Disable caching of AJAX responses
     cache: false
@@ -57,7 +62,7 @@ function processCourse(course,instances) {
 		for(k=0;k<occurs.length;k++) {
 			ocr = occurs[k];
 			if (k < 2) {
-				running += '<li><span id="courseLoc">' + ocr["displayDate"] + ' <small>('+ocr["location"] + ')</small></span><a href="'+ocr["url"]+'" class="courseButton bookButton btn btn-primary" style="border: 1px solid #333;">Book</a></li>';
+				running += '<li><span id="courseLoc">' + ocr["displayDate"] + ' <small>('+ocr["location"] + ')</small></span><a href="'+ocr["url"]+'?_eboga='+gaClientId+'" class="courseButton bookButton btn btn-primary" style="border: 1px solid #333;" onclick="onBookButton(\''+title+'\',\''+ocr["shortDate"]+'\')">Book</a></li>';
 			}
 		}
 		running += '</ul></div>';
@@ -100,6 +105,7 @@ function getCourseInstances(instances,key) {
 			now = new Date();
 			run = new Date(ins["date"]);
 			day = run.getDate();
+      month = run.getMonth();
 			suffix = "th";
 			if (day == 1 || day == 21 || day == 31) {
 				suffix = "st";
@@ -110,7 +116,8 @@ function getCourseInstances(instances,key) {
 			if (day == 3 || day == 23) {
 				suffix = "rd";
 			}
-			ins["displayDate"] = day + suffix + " " + monthNames[run.getMonth()];
+			ins["displayDate"] = day + suffix + " " + monthNames[month];
+      ins["shortDate"] = (day < 10 ? '0' : '') + day + (month < 9 ? '0' : '') + (month+1) + run.getFullYear()
 			// Removed the ticket availability check
 			if (run > now) {
 				occurs.push(ins);
@@ -142,4 +149,8 @@ function getInstances(course) {
         .error(function() {
                 $('#instances').hide();
         });
+}
+
+function onBookButton(course_name, course_date) {
+  ga('send', 'event', "Course Enquiry", "Click", course_name, course_date);
 }
