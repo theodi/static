@@ -635,6 +635,25 @@ hr {
 
     }
 
+    &.summit-image-foreground {
+      padding: 0;
+
+      div.text {
+        padding: 0 25px 27px 25px
+      }
+
+      div.image {
+          margin-left: -25px;
+          margin-right: -25px;
+      }
+
+      img {
+          max-width: 100%;
+          max-height: none;
+          margin-bottom: 30px;
+      }
+    }
+
     &.module-image-foreground {
 
         .module-heading {
