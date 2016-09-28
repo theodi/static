@@ -214,12 +214,23 @@
           padding: 0;
         }
 
+        .module-heading {
+          font-size: 24px;
+        }
+
         img {
           width: 80%;
           position: relative;
           top: 0;
           left: 0;
-          margin-bottom: 30px;
+          margin-bottom: 10px;
+        }
+
+        .person-description {
+          font-size: 0.75em;
+          font-weight: normal;
+          padding: 0 18px;
+          line-height: 1.4em;
         }
       }
     }
