@@ -9,5 +9,4 @@ env:
   - GOVUK_APP_DOMAIN: dev
   - DEV_DOMAIN: dev
   - GOVUK_ASSET_HOST: http://static.dev
-  - QUIRKAFLEEG_AIRBRAKE_KEY: abc123
   - WHOISVISITING_STATS_ID: abc123
