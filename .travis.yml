@@ -3,22 +3,6 @@ sudo: false
 cache: bundler
 rvm:
 - 1.9.3
-after_success:
-- ! '[ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && curl -v -X DELETE -u $GITHUB_USER:$GITHUB_PASSWORD
-  "https://api.github.com/repos/$TRAVIS_REPO_SLUG/git/refs/tags/CURRENT"'
-- ! '[ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && curl -v -X POST -d ''{"ref":"refs/tags/CURRENT","sha":"''$TRAVIS_COMMIT''"}''  --header
-  "Content-Type:application/json" -u $GITHUB_USER:$GITHUB_PASSWORD "https://api.github.com/repos/$TRAVIS_REPO_SLUG/git/refs"'
-branches:
-  except:
-  - CURRENT
-notifications:
-  irc:
-    channels:
-    - irc.freenode.net#theodi
-    template:
-    - ! '%{repository} %{branch} - %{message} %{build_url}'
-    on_success: change
-    on_failure: always
 env:
   global:
   - secure: ewcoHy5IMKopERu/KuFcxJJoqlcAe0fs9ClAYxzdQeK6IPoF0O8c9a+bMp0Ngr5l+GfELPFmQVSN6+YN1f1QFLiDViLDyUw2NX2Rhs5DE0DBEmAWOARX5SB+CD5DZ/lOVCo9ADHqfp+ITl6QXtO5ykqW+71Nknujqd84BykD4pg=
@@ -49,5 +33,3 @@ env:
   - secure: BDx2CgX1gEgTJsY+6jPWC5BBT7ngHmv4k7GGQ3KSjlW9zzlQ2yqKyOTg7563fxlZRmfPro5IRqxlYwgSEJd46JS2RW1OXoaRqRJSRJT2h9k0lqFyoIFOp3WLcdl9u5voZBGuNwos65tcuMQUXs+GfJt8VkZ/GeZw1gs9de+HWCE=
   - secure: JqaXArgBx9slUVS0sI/acs81/UATu8bWlBEepfXNAif3ov90ylcyqA3ph9s7p1+UTaEF8qS2X9cJ0GDy3Y/Bq6YdIvV6HiTdUw5TC4JPD26uGwjkeZyUaxk6yh+RI+tFU5ZgP0WT2DYDViymqd/cS2v1bSUZ3R8QGsQQdSYJIuA=
   - secure: eP+zeKzUf4xfYNsK3mdtKns4oxs2aoJJPb+UY7X7JybKBuHNrnVVYaQN6t2cODODtgtDzxe0hF3ojQWoE9eRF8bX14EfJF81d5lWvbShEGJVpM1WYy0PEDvxPKwtiwz43XP4Lf3+o8L6kF0av/TqnU85s2YURSyZ1/fFjnjLud0=
-  - secure: Gcl+VlCOO2eM3lcBjsNLh95sp6A5glRkd7n8uinsv5BetSzmu/qdr8SLAutZ6/FTa4hpII7hP05/J7i7nqAzuQvaYmT9JcMLukoH8JF4fH57/+b3YHhLyhYA03OY/IbxUHbRTV2ACT2+vxeRZ0FG9g6ZdQEQE8sCN931Q1CMyDI=
-  - secure: hIR7WKBpIq4Hbr7Ca6HfUYa3GsBD81z8lwjpAGgCmoGuL/So9EQHm2cG4CQH29V5OXfGbXXeX2UO3eI5MHtJvc2uz5LboSRJToy+vuv4k4EjpwPMO1r3d64ZBjee3IP6B9jELOWpxrLce1T+BGwYb0c1uYf1jALS0rgsWHxxf/s=

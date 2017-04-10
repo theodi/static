@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
-#ruby=ruby-1.9.3
-#ruby-gemset=quirkafleeg-static
+ruby "1.9.3"
 
 gem 'rails', '~> 3.2.13'
 gem 'foreman', '< 0.65.0'
@@ -31,6 +30,7 @@ end
 
 group :production do
   gem 'airbrake', '~> 4.3.4'
+  gem "rails_12factor"
 end
 
 gem 'plek', '~> 1.7'
