@@ -30,6 +30,7 @@ end
 
 group :production do
   gem 'airbrake', '~> 4.3.4'
+  gem "rails_12factor"
 end
 
 gem 'plek', '~> 1.7'
