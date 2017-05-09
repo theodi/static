@@ -9,7 +9,7 @@ function populatePeopleBlock(blockid,people,badge) {
 }
 
 function getPerson(blockid,person,badge) {
-        $.getJSON( "http://contentapi.theodi.org/"+person.name+".json")
+        $.getJSON( "//contentapi.theodi.org/"+person.name+".json")
                 .done(function(data) {
                         name = data.title;
                         role = person.specialism;
