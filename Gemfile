@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby "1.9.3"
 
-gem 'rails', '~> 3.2.13'
+gem 'rails', '~> 3.2.22'
 gem 'foreman', '< 0.65.0'
 gem 'thin'
 gem 'dotenv-rails', '~> 1.0' # Fix to 1.x for rails 3
