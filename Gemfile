@@ -5,7 +5,7 @@ ruby "1.9.3"
 gem 'rails', '~> 3.2.13'
 gem 'foreman', '< 0.65.0'
 gem 'thin'
-gem 'dotenv-rails', '~> 1.0' # Fix to 1.x for rails 3
+gem 'dotenv-rails', '~> 2.2' # Fix to 1.x for rails 3
 gem 'rack-cache', '< 1.3.0' # Pinning because we're still on 1.9.3 - can unpin once we get on new cookware
 
 gem 'aws-ses', :require => 'aws/ses' # Needed by exception_notification
