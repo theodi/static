@@ -8,8 +8,6 @@ gem 'thin'
 gem 'dotenv-rails', '~> 2.2' # Fix to 1.x for rails 3
 gem 'rack-cache', '< 1.3.0' # Pinning because we're still on 1.9.3 - can unpin once we get on new cookware
 
-gem 'aws-ses', :require => 'aws/ses' # Needed by exception_notification
-gem 'exception_notification', '~> 4.1.1'
 gem 'lograge', '~> 0.3.6'
 
 gem 'jquery-rails'
