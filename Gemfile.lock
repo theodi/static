@@ -88,7 +88,7 @@ GEM
     metaclass (0.0.4)
     mime-types (1.25.1)
     mini_portile2 (2.1.0)
-    mocha (0.13.3)
+    mocha (1.2.1)
       metaclass (~> 0.0.1)
     multi_json (1.12.1)
     nokogiri (1.6.8)
@@ -194,7 +194,7 @@ DEPENDENCIES
   jasmine (= 1.1.2)
   jquery-rails
   lograge (~> 0.3.6)
-  mocha (= 0.13.3)
+  mocha (= 1.2.1)
   plek (~> 2.0)
   rack-cache (< 1.7.0)
   rails (~> 3.2.22)
