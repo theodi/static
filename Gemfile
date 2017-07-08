@@ -21,7 +21,7 @@ group :assets do
 end
 
 group :test do
-  gem 'capybara', '1.1.0'
+  gem 'capybara', '2.14.4'
   gem 'mocha', '1.2.1', :require => false
   gem 'shoulda', '3.5.0'
 end
