@@ -1,39 +1,37 @@
 source 'https://rubygems.org'
 
-#ruby=ruby-1.9.3
-#ruby-gemset=quirkafleeg-static
+ruby "1.9.3"
 
-gem 'rails', '~> 3.2.13'
-gem 'foreman', '< 0.65.0'
+gem 'rails', '~> 3.2.22'
+gem 'foreman', '< 0.84.0'
 gem 'thin'
-gem 'dotenv-rails', '~> 1.0' # Fix to 1.x for rails 3
-gem 'rack-cache', '< 1.3.0' # Pinning because we're still on 1.9.3 - can unpin once we get on new cookware
+gem 'dotenv-rails', '~> 2.2' # Fix to 1.x for rails 3
+gem 'rack-cache', '< 1.7.0' # Pinning because we're still on 1.9.3 - can unpin once we get on new cookware
 
-gem 'aws-ses', :require => 'aws/ses' # Needed by exception_notification
-gem 'exception_notification', '~> 2.6.1'
-gem 'lograge', '~> 0.1.0'
+gem 'lograge', '~> 0.3.6'
 
 gem 'jquery-rails'
 gem 'font-awesome-rails'
 
 group :assets do
-  gem "therubyracer", "~> 0.12.0"
+  gem "therubyracer", "~> 0.12.3"
   gem 'uglifier'
-  gem 'sass', '3.2.1'
-  gem 'sass-rails', '3.2.5'
+  gem 'sass', '3.4.25'
+  gem 'sass-rails', '3.2.6'
 end
 
 group :test do
   gem 'capybara', '1.1.0'
-  gem 'mocha', '0.13.3', :require => false
-  gem 'shoulda', '2.11.3'
+  gem 'mocha', '1.2.1', :require => false
+  gem 'shoulda', '3.5.0'
 end
 
 group :production do
   gem 'airbrake', '~> 4.3.4'
+  gem "rails_12factor"
 end
 
-gem 'plek', '~> 1.7'
+gem 'plek', '~> 2.0'
 gem 'jasmine', '1.1.2'
 
 gem 'govuk_frontend_toolkit', github: 'alphagov/govuk_frontend_toolkit', tag: 'v0.3.1'

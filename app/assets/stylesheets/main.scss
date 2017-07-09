@@ -76,7 +76,7 @@ blockquote {
 margin: 10px 0;
 padding: 0.5em 0;
 quotes: "\201C" "\201D" "\2018" "\2019";
- color: #8e8c8c;
+ color: #4c4c4c;
 
     p {
   display: inline;
@@ -88,13 +88,23 @@ quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
 blockquote:before {
-  color: #ccc;
+  color: #191919;
   content: open-quote;
   font-size: 4.5em;
   line-height: 0.1em;
   margin-right: 6px;
   margin-left: -3px;
   vertical-align: -0.4em;
+}
+
+blockquote:after {
+  color: #191919;
+  content: close-quote;
+  font-size: 4.5em;
+  line-height: 0.1em;
+  margin-right: -3px;
+  margin-left: 10px;
+  vertical-align: -0.5em;
 }
 
 figcaption {
@@ -124,6 +134,21 @@ hr {
 	border-radius: 0;
 	box-shadow: none;
 }
+
+/*------------------------------------*\
+    TABLES
+\*------------------------------------*/
+
+// Styles below are for the table on the Open Banking Membership page
+
+.tg-mem  {border-collapse:collapse;border-spacing:0;border-color:#ccc;border:none;}
+.tg-mem td{font-family:Arial, sans-serif;font-size:14px;padding:20px 20px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg-mem th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:20px 20px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg-mem .tg-qnmb{font-weight:bold;font-size:16px;text-align:center}
+.tg-mem .tg-0wez{font-weight:bold;font-size:16px;background-color:#efefef;text-align:center}
+.tg-mem .tg-gb7b{font-weight:bold;font-size:16px;background-color:#efefef;color:#000000;text-align:center}
+.tg-mem .tg-yw4l{vertical-align:top}
+
 
 /*------------------------------------*\
     HEADER
@@ -608,6 +633,25 @@ hr {
         max-height: 60%;
         max-width: 60%;
 
+    }
+
+    &.summit-image-foreground {
+      padding: 0;
+
+      div.text {
+        padding: 0 25px 27px 25px
+      }
+
+      div.image {
+          margin-left: -25px;
+          margin-right: -25px;
+      }
+
+      img {
+          max-width: 100%;
+          max-height: none;
+          margin-bottom: 30px;
+      }
     }
 
     &.module-image-foreground {
@@ -1317,6 +1361,14 @@ figure.pull-right {
     color: #8e8c8c;
     font-size: 14px;
     margin-bottom: 30px;
+
+    img {
+      margin-left: 8px;
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      border-radius:50%;
+      overflow: hidden;
+    }
 }
 
 table {
@@ -1829,7 +1881,7 @@ a.booking_url {
   width:800px;
   max-width:100%;
   font-family:helvetica neue;
-  font-size:20px;
+  font-size:18px;
   color: #ffffff;
   text-decoration: none;
 
@@ -1842,7 +1894,7 @@ a.booking_url {
   width:800px;
   max-width:100%;
   font-family:helvetica neue;
-  font-size:20px;
+  font-size:18px;
   color: #ffffff;
   opacity: 0.6;
   text-decoration: none;
@@ -1851,4 +1903,15 @@ a.booking_url {
 .story-link{
   text-decoration:none;
   color: #ffffff;
+}
+
+/* HR Styles */
+
+.hr-black {
+  height:2px;
+  border:none;
+  color:#f1f1f1;
+  background-color:#f1f1f1;
+  width:40%;
+  margin-bottom: 30px;
 }
