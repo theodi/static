@@ -12,6 +12,7 @@ gem 'lograge', '~> 0.3.6'
 
 gem 'jquery-rails'
 gem 'font-awesome-rails'
+gem 'yui-compressor'
 
 group :assets do
   gem "therubyracer", "~> 0.12.3"
