@@ -48,11 +48,12 @@
 
     <!-- Patched to remove search bar. To reenable, just remove `or true` -->
     <% unless mobile %>
-      <form class="navbar-form navbar-right" action="/search" method="get">
+      <form class="navbar-form navbar-right" method="get" action="//duckduckgo.com/">
         <div class="form-group">
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search ODI" name="q"/>
-            <input type="submit" value="Go" class="btn"/>
+            <input value="theodi.org" name="sites" type="hidden">
+            <input class="form-control" placeholder="Search ODI" name="q" type="text">
+            <input value="Go" class="btn" type="submit">
           </div>
         </div>
       </form>
