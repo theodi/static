@@ -17,7 +17,7 @@ gem 'yui-compressor'
 group :assets do
   gem "therubyracer", "~> 0.12.3"
   gem 'uglifier'
-  gem 'sass', '3.4.25'
+  gem 'sass', '3.5.6'
   gem 'sass-rails', '3.2.6'
 end
 
