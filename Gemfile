@@ -23,7 +23,7 @@ end
 
 group :test do
   gem 'capybara', '1.1.0'
-  gem 'mocha', '1.3.0', :require => false
+  gem 'mocha', '1.5.0', :require => false
   gem 'shoulda', '3.5.0'
 end
 
