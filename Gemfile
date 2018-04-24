@@ -5,7 +5,7 @@ ruby "1.9.3"
 gem 'rails', '~> 3.2.22'
 gem 'foreman', '< 0.84.0'
 gem 'thin'
-gem 'dotenv-rails', '~> 2.2' # Fix to 1.x for rails 3
+gem 'dotenv-rails', '~> 2.4' # Fix to 1.x for rails 3
 gem 'rack-cache', '< 1.7.0' # Pinning because we're still on 1.9.3 - can unpin once we get on new cookware
 
 gem 'lograge', '~> 0.3.6'
