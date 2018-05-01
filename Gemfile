@@ -35,4 +35,4 @@ end
 gem 'plek', '~> 2.0'
 gem 'jasmine', '1.1.2'
 
-gem 'govuk_frontend_toolkit', github: 'alphagov/govuk_frontend_toolkit', tag: 'v0.3.1'
+gem 'govuk_frontend_toolkit'
