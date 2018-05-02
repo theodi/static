@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby "1.9.3"
 
-gem 'rails', '~> 3.2.22'
+gem 'rails', '~> 4.2.10'
 gem 'foreman', '< 0.84.0'
 gem 'thin'
 gem 'dotenv-rails', '~> 2.2' # Fix to 1.x for rails 3
@@ -18,7 +18,7 @@ group :assets do
   gem "therubyracer", "~> 0.12.3"
   gem 'uglifier'
   gem 'sass', '3.4.25'
-  gem 'sass-rails', '3.2.6'
+  gem 'sass-rails', '5.0.7'
 end
 
 group :test do
